@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TweenHoverOver : MonoBehaviour
+{
+    public float TweenTime;
+    public float Strength;
+
+    void OnMouseOver()
+    {
+        LeanTween.cancel(gameObject);
+
+        transform.localScale = Vector3.one;
+
+        LeanTween.scale(gameObject, Vector3.one * Strength, TweenTime).setEaseOutBounce();
+
+        //If your mouse hovers over the GameObject with the script attached, output this message
+        Debug.Log("Mouse is over GameObject.");
+    }
+
+    void OnMouseExit()
+    {
+        //LeanTween.cancel(gameObject);
+
+        transform.localScale = Vector3.one;
+
+        LeanTween.scale(gameObject, Vector3.one * Strength, TweenTime).setEaseOutBack();
+
+        //The mouse is no longer hovering over the GameObject so output this message each frame
+        Debug.Log("Mouse is no longer on GameObject.");
+    }
+}
