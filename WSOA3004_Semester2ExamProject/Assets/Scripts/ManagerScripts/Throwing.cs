@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwing : MonoBehaviour
 {
     //public bool IsTouchingGround = false;
     public ParticleSystem explosion; 
     public GameObject Jammo;
+    
 
 
     /*  public void OnTriggerEnter2D(Collider2D collision)
@@ -34,7 +36,9 @@ public class Throwing : MonoBehaviour
     void Update()
     {
         explosion = GetComponent<ParticleSystem>();
-       // StartCoroutine(pParticle());
+        // StartCoroutine(pParticle());
+
+       
 
     }
 
@@ -49,6 +53,7 @@ public class Throwing : MonoBehaviour
         if (collision.gameObject.tag == "Jammo")
         {
             this.GetComponent<Rigidbody>().mass = 1f;
+           
         }
         else if (collision.gameObject.tag != "Jammo") 
         {

@@ -6,13 +6,22 @@ public class Portal : MonoBehaviour
 {
     public Transform linkedPortal;
     public Animator PortalAnim;
+    public GameObject PortalUI;
 
-   
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            PortalUI.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Adam")
         {
+            PortalUI.SetActive(true);
+
             Player_Movement fountain = collision.gameObject.GetComponent<Player_Movement>();
             if (fountain.Teleporting == false)
             {
