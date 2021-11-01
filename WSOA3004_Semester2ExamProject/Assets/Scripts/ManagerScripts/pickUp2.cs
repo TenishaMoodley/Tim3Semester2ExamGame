@@ -4,18 +4,33 @@ using UnityEngine;
 
 public class pickUp2 : MonoBehaviour
 {
+    [SerializeField] private GameObject followObject;
+    [SerializeField] private float speed; 
+
     
     public Transform destination;
     public GameObject BarrelUI;
+    public Animator anim;
+    private Rigidbody rBody; 
 
-    void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.E))
         {
             this.transform.parent = null;
             GetComponent<Rigidbody>().useGravity = true;
+            transform.position = Vector3.MoveTowards(transform.position, followObject.transform.position, speed * Time.deltaTime);           //barrel position
+            //rBody.velocity = new Vector3(20f, 0f, 0f);
+            anim.SetBool("isCarrying", false);
+
         }
 
+    }
+
+    void Update()
+    {
+
+        rBody = GetComponent<Rigidbody>(); 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             BarrelUI.SetActive(false);
@@ -27,6 +42,7 @@ public class pickUp2 : MonoBehaviour
     {
         if (collide.gameObject.tag == "Jammo" ) 
         {
+            Player_Movement link = collide.gameObject.GetComponent<Player_Movement>();
             Debug.Log("contact");
             //Input.GetKey(KeyCode.E)
 
@@ -34,6 +50,7 @@ public class pickUp2 : MonoBehaviour
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = destination.position;
             this.transform.parent = GameObject.Find("pickedUp").transform;
+            anim.SetBool("isCarrying", true);
         }
     }
 }
