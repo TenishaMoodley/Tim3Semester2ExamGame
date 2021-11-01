@@ -132,7 +132,7 @@ public class Player_Movement : MonoBehaviour
         var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
 
         var eulerRotation = transform.eulerAngles;
-        eulerRotation.y = angle + angleOffset; //possible issue.
+        eulerRotation.y = angle + angleOffset;      //possible issue.
         transform.eulerAngles = eulerRotation;
         
         

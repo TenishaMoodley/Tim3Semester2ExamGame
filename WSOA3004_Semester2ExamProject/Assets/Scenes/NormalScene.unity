@@ -2336,8 +2336,8 @@ MonoBehaviour:
   Move_Left: 97
   Move_right: 100
   speed: 6.5
-  Jump: 0
-  jumpForce: 0
+  Jump: 304
+  jumpForce: 7.5
   rBody: {fileID: 489258433}
   isGrounded: 1
   horizontalAxis: Horizontal_1
@@ -5717,8 +5717,8 @@ MonoBehaviour:
   Move_Left: 276
   Move_right: 275
   speed: 5
-  Jump: 0
-  jumpForce: 0
+  Jump: 303
+  jumpForce: 5
   rBody: {fileID: 1382540029}
   isGrounded: 1
   horizontalAxis: Horizontal_2
