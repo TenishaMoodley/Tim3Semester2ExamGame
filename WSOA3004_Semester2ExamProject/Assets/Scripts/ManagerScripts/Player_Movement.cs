@@ -28,7 +28,7 @@ public class Player_Movement : MonoBehaviour
     protected string vericalAxis;
 
     [SerializeField]
-    protected float angleOffset = 90;
+    protected float angleOffset = 90; // possible issue. 
     
 
     public Vector3 Position_Change;
@@ -132,7 +132,7 @@ public class Player_Movement : MonoBehaviour
         var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
 
         var eulerRotation = transform.eulerAngles;
-        eulerRotation.y = angle + angleOffset;
+        eulerRotation.y = angle + angleOffset; //possible issue.
         transform.eulerAngles = eulerRotation;
         
         
