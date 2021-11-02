@@ -6,16 +6,16 @@ using TMPro;
 
 public class destroyObject : MonoBehaviour
 {
-    public float CollectableSeconds;
     public Slider TimerSlider;
     public TMP_Text TimerText;
     public float CollectableTime;
+    public float defaultTime;
 
     private bool stopTimer;
 
     void Start()
     {
-        //StartCoroutine(Destroyself());
+        CollectableTime = defaultTime;
         stopTimer = false;
         TimerSlider.maxValue = CollectableTime;
         TimerSlider.value = CollectableTime;
@@ -23,32 +23,22 @@ public class destroyObject : MonoBehaviour
 
     private void Update()
     {
-        float time = CollectableTime - Time.time;
-        int minutes = Mathf.FloorToInt(time / 60);
-        int seconds = Mathf.FloorToInt(time - minutes*60);
+        float timeRN = CollectableTime - Time.timeSinceLevelLoad;
+        int minutes = Mathf.FloorToInt(timeRN / 60);
+        int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
 
         string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-        if (time <= 0)
+        if (timeRN <= 0)
         {
             stopTimer = true;
-            Destroy(gameObject);
-            
+            gameObject.SetActive(false);
         }
         if (stopTimer == false)
         {
-            
             TimerText.text = TextTime;
-            TimerSlider.value = time;
+            TimerSlider.value = timeRN;
         }
-    }
 
-    IEnumerator Destroyself()
-    {
-        yield return new WaitForSeconds(CollectableSeconds);
-        GameObject manager = GameObject.Find("Manager");
-        manager.GetComponent<Manager>().DestroyedAdd();
-        Destroy(gameObject);
     }
-   
 }

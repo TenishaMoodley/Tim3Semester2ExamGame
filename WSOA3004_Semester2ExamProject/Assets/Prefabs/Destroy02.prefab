@@ -604,10 +604,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb830ad7b3ae1643ad37b0a588ea5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollectableSeconds: 60
   TimerSlider: {fileID: 2980907519038202323}
   TimerText: {fileID: 4952147434188784557}
-  CollectableTime: 60
+  CollectableTime: 10
+  defaultTime: 10
 --- !u!114 &824857409728458711
 MonoBehaviour:
   m_ObjectHideFlags: 0
