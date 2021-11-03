@@ -13,6 +13,7 @@ TagManager:
   - Barrel
   - Connection
   - pickUP
+  - box
   layers:
   - Default
   - TransparentFX

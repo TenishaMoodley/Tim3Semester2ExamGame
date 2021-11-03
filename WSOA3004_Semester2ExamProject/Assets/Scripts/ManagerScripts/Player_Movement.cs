@@ -19,7 +19,9 @@ public class Player_Movement : MonoBehaviour
     public float jumpForce;
     public Rigidbody rBody;
 
+    ///Jump///
     public bool isGrounded = true;
+    public bool isOnBox = false; 
 
     [SerializeField]
     protected string horizontalAxis;
@@ -125,7 +127,6 @@ public class Player_Movement : MonoBehaviour
             anim.SetBool("isRunningL", false);
         }
 
-
         HandleJump();
 
 
@@ -149,6 +150,18 @@ public class Player_Movement : MonoBehaviour
             rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
+
+      
+    }
+
+    private void boxJump() 
+    {
+        if (Input.GetKey((KeyCode)Jump) && isOnBox)
+        {
+            rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnBox = true;
+        }
+
     }
 
     private void ClampPosition()
@@ -184,8 +197,14 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("ground"))
         {
             isGrounded = true;
+            isOnBox = false;
         }
 
+        if (collision.gameObject.CompareTag("box"))
+        {
+            isOnBox = true;
+            isGrounded = false;
+        }
 
     }
 
@@ -195,5 +214,13 @@ public class Player_Movement : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        if (collision.gameObject.CompareTag("box")) 
+        {
+            isOnBox = false;
+        
+        }
+
+
     }
 }

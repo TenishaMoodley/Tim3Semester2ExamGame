@@ -955,6 +955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DontDestroy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3962941243117068896, guid: 2a261898f2bce0746a5b3266770fb1a0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3962941243117068898, guid: 2a261898f2bce0746a5b3266770fb1a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2201,6 +2205,7 @@ MonoBehaviour:
   jumpForce: 7.5
   rBody: {fileID: 489258433}
   isGrounded: 1
+  isOnBox: 0
   horizontalAxis: Horizontal_1
   vericalAxis: Vertical_1
   angleOffset: 90
@@ -2236,10 +2241,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.15383601
+  m_Radius: 0.28016546
   m_Height: 1.3804073
   m_Direction: 1
-  m_Center: {x: -0.022952158, y: 0.679631, z: 0.27187783}
+  m_Center: {x: 0.025347669, y: 0.679631, z: 0.27187783}
 --- !u!1 &507002897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,6 +5098,7 @@ MonoBehaviour:
   jumpForce: 5
   rBody: {fileID: 1382540029}
   isGrounded: 1
+  isOnBox: 0
   horizontalAxis: Horizontal_2
   vericalAxis: Vertical_2
   angleOffset: 90
@@ -5243,6 +5249,7 @@ MonoBehaviour:
   jumpForce: 6
   rBody: {fileID: 1425025780}
   isGrounded: 1
+  isOnBox: 0
   horizontalAxis: 
   vericalAxis: 
   angleOffset: 90
@@ -8269,6 +8276,7 @@ MonoBehaviour:
   jumpForce: 6
   rBody: {fileID: 2014453297}
   isGrounded: 1
+  isOnBox: 0
   horizontalAxis: 
   vericalAxis: 
   angleOffset: 90
