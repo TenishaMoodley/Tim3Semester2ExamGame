@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2510727408612944762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14999962, y: 0.03999996, z: 0.27999973}
+  m_LocalPosition: {x: 0.14999962, y: 0.375, z: 0.175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4630446926377055817}
@@ -4993,8 +4993,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1331019, y: 0.74209476, z: 1.34447}
-  m_Center: {x: 0.0056316853, y: 0.5951086, z: 0.03810498}
+  m_Size: {x: 0.7404094, y: 0.74209476, z: 0.7553654}
+  m_Center: {x: 0.0013868809, y: 0.5951086, z: -0.041795254}
 --- !u!114 &2510727410113771039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5007,6 +5007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d7a395d65f3d5499e8d316f6371d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followObject: {fileID: 0}
+  speed: 0
   destination: {fileID: 0}
   BarrelUI: {fileID: 0}
   anim: {fileID: 0}

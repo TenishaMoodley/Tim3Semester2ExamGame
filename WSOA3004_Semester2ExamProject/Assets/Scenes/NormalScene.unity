@@ -8655,6 +8655,26 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6708708
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Size.z
+      value: 0.6696694
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Center.x
+      value: 0.026051044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Center.z
+      value: 0.036878943
+      objectReference: {fileID: 0}
     - target: {fileID: 2510727410113771039, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: anim
       value: 
