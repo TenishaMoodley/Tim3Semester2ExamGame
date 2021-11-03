@@ -128,7 +128,7 @@ public class Player_Movement : MonoBehaviour
         }
 
         HandleJump();
-
+        
 
         var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
 
@@ -149,6 +149,7 @@ public class Player_Movement : MonoBehaviour
         {
             rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+            isOnBox = true;
         }
 
       
@@ -156,11 +157,11 @@ public class Player_Movement : MonoBehaviour
 
     private void boxJump() 
     {
-        if (Input.GetKey((KeyCode)Jump) && isOnBox)
+       /* if (Input.GetKey((KeyCode)Jump) && isOnBox)
         {
             rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnBox = true;
-        }
+        }*/
 
     }
 
@@ -197,13 +198,13 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("ground"))
         {
             isGrounded = true;
-            isOnBox = false;
+            //isOnBox = false;
         }
 
         if (collision.gameObject.CompareTag("box"))
         {
             isOnBox = true;
-            isGrounded = false;
+            //isGrounded = false;
         }
 
     }
@@ -212,12 +213,15 @@ public class Player_Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ground"))
         {
-            isGrounded = false;
+            isGrounded = true; ;
+           // isOnBox = false;
+
         }
 
         if (collision.gameObject.CompareTag("box")) 
         {
-            isOnBox = false;
+            //isOnBox = false;
+           // isGrounded = true;
         
         }
 
