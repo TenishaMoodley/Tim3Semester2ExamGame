@@ -24,7 +24,6 @@ public class Manager : MonoBehaviour
         Time.timeScale = 1f;
         score = 0;
         Destroyed = 0;
-
     }
 
 
