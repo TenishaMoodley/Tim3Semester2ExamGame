@@ -15,7 +15,7 @@ public class destroyObject : MonoBehaviour
 
     void Start()
     {
-        CollectableTime = defaultTime;
+        //CollectableTime = defaultTime;
         stopTimer = false;
         TimerSlider.maxValue = CollectableTime;
         TimerSlider.value = CollectableTime;

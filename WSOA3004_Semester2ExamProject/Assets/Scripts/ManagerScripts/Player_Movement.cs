@@ -18,10 +18,11 @@ public class Player_Movement : MonoBehaviour
     public KeyCode Jump;
     public float jumpForce;
     public Rigidbody rBody;
+    //private float yForce; //gravity 
 
     ///Jump///
     public bool isGrounded = true;
-    public bool isOnBox = false; 
+   
 
     [SerializeField]
     protected string horizontalAxis;
@@ -30,7 +31,7 @@ public class Player_Movement : MonoBehaviour
     protected string vericalAxis;
 
     [SerializeField]
-    protected float angleOffset = 90; // possible issue. 
+    protected float angleOffset = 0f; // possible issue. 
     
 
     public Vector3 Position_Change;
@@ -63,10 +64,11 @@ public class Player_Movement : MonoBehaviour
 
     void Update()
     {
-       // Vector3 forward = faceForward.position - transform.position;
-       
-       // Vector3 left = faceLeft.position - transform.position;
-       //Vector3 rigth = faceRight.position - transform.position    
+        // Vector3 forward = faceForward.position - transform.position;
+
+        // Vector3 left = faceLeft.position - transform.position;
+        //Vector3 rigth = faceRight.position - transform.position
+        //yForce += Physics.gravity.y * Time.deltaTime; 
     }
 
 
@@ -149,21 +151,13 @@ public class Player_Movement : MonoBehaviour
         {
             rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
-            isOnBox = true;
+           // yForce = jumpForce;
         }
 
       
     }
 
-    private void boxJump() 
-    {
-       /* if (Input.GetKey((KeyCode)Jump) && isOnBox)
-        {
-            rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnBox = true;
-        }*/
-
-    }
+    
 
     private void ClampPosition()
     {
@@ -201,11 +195,7 @@ public class Player_Movement : MonoBehaviour
             //isOnBox = false;
         }
 
-        if (collision.gameObject.CompareTag("box"))
-        {
-            isOnBox = true;
-            //isGrounded = false;
-        }
+      
 
     }
 
@@ -214,17 +204,17 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("ground"))
         {
             isGrounded = true; ;
-           // isOnBox = false;
+          
 
         }
+    }
 
-        if (collision.gameObject.CompareTag("box")) 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag =="ground") 
         {
-            //isOnBox = false;
-           // isGrounded = true;
+            isGrounded = true;
         
         }
-
-
     }
 }
