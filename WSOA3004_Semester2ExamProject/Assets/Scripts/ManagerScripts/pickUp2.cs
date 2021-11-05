@@ -50,4 +50,9 @@ public class pickUp2 : MonoBehaviour
             anim.SetBool("isCarrying", true);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
 }

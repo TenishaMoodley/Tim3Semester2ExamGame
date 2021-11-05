@@ -7,6 +7,7 @@ public class Portal : MonoBehaviour
     public Transform linkedPortal;
     public Animator PortalAnim;
     public GameObject PortalUI;
+    public General generalScript;
 
     private void Update()
     {
@@ -18,7 +19,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Adam")
+        if (collision.gameObject.tag == "Adam") //|| collision.gameObject.tag == "Connection"
         {
             PortalUI.SetActive(true);
 

@@ -1966,6 +1966,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 1373512332}
   PortalAnim: {fileID: 403500891}
   PortalUI: {fileID: 1550987576}
+  generalScript: {fileID: 0}
 --- !u!65 &403500887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3802,9 +3803,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2325721033169164872, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2510727410113771036, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771039, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055814, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_Name
@@ -3854,7 +3867,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7352820933531873526, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2510727410113771039, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+    - {fileID: 2325721033169164872, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+    - {fileID: 2510727410113771038, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
 --- !u!1 &1009400331
 GameObject:
@@ -4541,6 +4561,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 1853882083}
   PortalAnim: {fileID: 1243245823}
   PortalUI: {fileID: 1550987576}
+  generalScript: {fileID: 0}
 --- !u!65 &1243245820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5031,6 +5052,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 403500890}
   PortalAnim: {fileID: 1373512337}
   PortalUI: {fileID: 1550987576}
+  generalScript: {fileID: 0}
 --- !u!65 &1373512334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7414,6 +7436,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 1243245818}
   PortalAnim: {fileID: 1853882088}
   PortalUI: {fileID: 1550987576}
+  generalScript: {fileID: 0}
 --- !u!65 &1853882085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8466,6 +8489,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2121713083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4630446926377055814, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 1004471279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2121713084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121713083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1054886780893406168
 BoxCollider:
   m_ObjectHideFlags: 0

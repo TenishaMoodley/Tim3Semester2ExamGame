@@ -22,6 +22,7 @@ public class General : MonoBehaviour
         if (Distance > Max_Distance)
         {
             Line_GO.SetActive(false);
+
         }
         else
         {
