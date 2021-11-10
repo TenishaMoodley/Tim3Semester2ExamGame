@@ -5,6 +5,7 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     public Transform linkedPortal;
+    public Transform jammoLocation; 
     public Animator PortalAnim;
     public GameObject PortalUI;
     public General generalScript;
@@ -31,7 +32,18 @@ public class Portal : MonoBehaviour
                 fountain.enteredPortal = gameObject;
                 PortalAnim.SetBool("isEntered", true);
             }
+        }
 
+        if (collision.gameObject.tag == "Jammo") 
+        {
+            Player_Movement fountain = collision.gameObject.GetComponent<Player_Movement>();
+            if (fountain.Teleporting == false)
+            {
+                fountain.Teleporting = true;
+                fountain.transform.position = jammoLocation.position;
+                fountain.enteredPortal = gameObject;
+                
+            }
         }
     }
 
@@ -47,6 +59,19 @@ public class Portal : MonoBehaviour
                 fountain.enteredPortal = null;
 
                 PortalAnim.SetBool("isEntered", false);
+            }
+
+        }
+
+        if (collision.gameObject.tag == "Jammo") 
+        {
+            Player_Movement fountain = collision.gameObject.GetComponent<Player_Movement>();
+            if (fountain.Teleporting == true && fountain.enteredPortal != gameObject) 
+            {
+                fountain.Teleporting = false;
+
+                fountain.enteredPortal = null;
+
             }
 
         }
