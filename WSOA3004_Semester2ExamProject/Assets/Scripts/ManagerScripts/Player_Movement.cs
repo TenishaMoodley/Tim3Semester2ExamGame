@@ -39,10 +39,20 @@ public class Player_Movement : MonoBehaviour
 
     public Vector3 Position_Change;
 
-    private float MaxX = 23;
-    private float MaxZ = 17;
-    private float MinX = -20;
-    private float MinZ = -8;
+    private float Easy_MaxX = 23;
+    private float Easy_MaxZ = 17;
+    private float Easy_MinX = -20;
+    private float Easy_MinZ = -8;
+
+    private float Normal_MaxX = 23;
+    private float Normal_MaxZ = 17;
+    private float Normal_MinX = -20;
+    private float Normal_MinZ = -8;
+
+    private float Hard_MaxX = 45;
+    private float Hard_MaxZ = 54;
+    private float Hard_MinX = -30;
+    private float Hard_MinZ = -19;
 
     ///Animations///
     public Animator anim;
@@ -165,39 +175,87 @@ public class Player_Movement : MonoBehaviour
 
     private void ClampPosition()
     {
-        Position_Change = transform.position;
-       // if (currentScene == "NormalScene")
-       // {
-            if (Position_Change.x >= MaxX)
+        Position_Change = this.gameObject.transform.position;
+
+        if (currentScene.name == "EasyScene")
+        {
+            if (Position_Change.x >= Easy_MaxX)
             {
-                Position_Change.x = MaxX;
-                transform.position = Position_Change;
+                Position_Change.x = Easy_MaxX;
+                this.transform.position = Position_Change;
             }
 
-            if (Position_Change.x <= MinX)
+            if (Position_Change.x <= Easy_MinX)
             {
-                Position_Change.x = MinX;
-                transform.position = Position_Change;
+                Position_Change.x = Easy_MinX;
+                this.transform.position = Position_Change;
             }
 
-            if (Position_Change.z >= MaxZ)
+            if (Position_Change.z >= Easy_MaxZ)
             {
-                Position_Change.z = MaxZ;
-                transform.position = Position_Change;
+                Position_Change.z = Easy_MaxZ;
+                this.transform.position = Position_Change;
             }
 
-            if (Position_Change.z <= MinZ)
+            if (Position_Change.z <= Easy_MinZ)
             {
-                Position_Change.z = MinZ;
-                transform.position = Position_Change;
+                Position_Change.z = Easy_MinZ;
+                this.transform.position = Position_Change;
+            }
+        }
+        else if(currentScene.name == "NormalScene")
+        {
+            if (Position_Change.x >= Normal_MaxX)
+            {
+                Position_Change.x = Normal_MaxX;
+                this.transform.position = Position_Change;
             }
 
+            if (Position_Change.x <= Normal_MinX)
+            {
+                Position_Change.x = Normal_MinX;
+                this.transform.position = Position_Change;
+            }
 
-       // }
-       // else
-       // {
-        
-        //}
+            if (Position_Change.z >= Normal_MaxZ)
+            {
+                Position_Change.z = Normal_MaxZ;
+                this.transform.position = Position_Change;
+            }
+
+            if (Position_Change.z <= Normal_MinZ)
+            {
+                Position_Change.z = Normal_MinZ;
+                this.transform.position = Position_Change;
+            }
+
+        }
+        else if(currentScene.name == "HardScene")
+        {
+            if (Position_Change.x >= Hard_MaxX)
+            {
+                Position_Change.x = Hard_MaxX;
+                this.transform.position = Position_Change;
+            }
+
+            if (Position_Change.x <= Hard_MinX)
+            {
+                Position_Change.x = Hard_MinX;
+                this.transform.position = Position_Change;
+            }
+
+            if (Position_Change.z >= Hard_MaxZ)
+            {
+                Position_Change.z = Hard_MaxZ;
+                this.transform.position = Position_Change;
+            }
+
+            if (Position_Change.z <= Hard_MinZ)
+            {
+                Position_Change.z = Hard_MinZ;
+                this.transform.position = Position_Change;
+            }
+        }
 
         
     }
