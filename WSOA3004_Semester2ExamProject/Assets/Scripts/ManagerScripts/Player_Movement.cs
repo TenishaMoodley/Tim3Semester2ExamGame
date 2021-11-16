@@ -4,6 +4,7 @@ using System.Numerics;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -162,29 +163,40 @@ public class Player_Movement : MonoBehaviour
     private void ClampPosition()
     {
         Position_Change = transform.position;
-        if (Position_Change.x >= MaxX)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("NormalScene"))
         {
-            Position_Change.x = MaxX;
-            transform.position = Position_Change;
+            if (Position_Change.x >= MaxX)
+            {
+                Position_Change.x = MaxX;
+                transform.position = Position_Change;
+            }
+
+            if (Position_Change.x <= MinX)
+            {
+                Position_Change.x = MinX;
+                transform.position = Position_Change;
+            }
+
+            if (Position_Change.z >= MaxZ)
+            {
+                Position_Change.z = MaxZ;
+                transform.position = Position_Change;
+            }
+
+            if (Position_Change.z <= MinZ)
+            {
+                Position_Change.z = MinZ;
+                transform.position = Position_Change;
+            }
+
+
+        }
+        else
+        {
+        
         }
 
-        if (Position_Change.x <= MinX)
-        {
-            Position_Change.x = MinX;
-            transform.position = Position_Change;
-        }
-
-        if (Position_Change.z >= MaxZ)
-        {
-            Position_Change.z = MaxZ;
-            transform.position = Position_Change;
-        }
-
-        if (Position_Change.z <= MinZ)
-        {
-            Position_Change.z = MinZ;
-            transform.position = Position_Change;
-        }
+        
     }
 
     void OnCollisionEnter(Collision collision)
