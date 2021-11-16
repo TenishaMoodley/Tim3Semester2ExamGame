@@ -9,7 +9,7 @@ public class adamBarrel : MonoBehaviour
         if (collision.gameObject.tag == "Adam") 
         {
             //this.gameObject.GetComponent<Collider>().enabled = false;
-            this.gameObject.GetComponent<Rigidbody>().mass = 1000f;
+            this.gameObject.GetComponent<Rigidbody>().mass = 5f;
             //this.gameObject.GetComponentInParent<Collider>().enabled = false;  
         }
         

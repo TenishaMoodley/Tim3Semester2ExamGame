@@ -8,10 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
+    Scene currentScene;
     public KeyCode Forward;
     public KeyCode Backward;
     public KeyCode Move_Left;
     public KeyCode Move_right;
+
 
     public float speed;
 
@@ -58,6 +60,7 @@ public class Player_Movement : MonoBehaviour
 
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene();
         rBody = GetComponent<Rigidbody>();
         //Cursor.visible = false;
         anim = GetComponent<Animator>();
@@ -163,8 +166,8 @@ public class Player_Movement : MonoBehaviour
     private void ClampPosition()
     {
         Position_Change = transform.position;
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("NormalScene"))
-        {
+       // if (currentScene == "NormalScene")
+       // {
             if (Position_Change.x >= MaxX)
             {
                 Position_Change.x = MaxX;
@@ -190,11 +193,11 @@ public class Player_Movement : MonoBehaviour
             }
 
 
-        }
-        else
-        {
+       // }
+       // else
+       // {
         
-        }
+        //}
 
         
     }
