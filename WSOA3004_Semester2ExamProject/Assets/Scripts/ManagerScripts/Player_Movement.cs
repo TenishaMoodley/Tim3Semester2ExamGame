@@ -49,10 +49,10 @@ public class Player_Movement : MonoBehaviour
     private float Normal_MinX = -20;
     private float Normal_MinZ = -8;
 
-    private float Hard_MaxX = 45;
+    private float Hard_MaxX = 19;
     private float Hard_MaxZ = 54;
-    private float Hard_MinX = -30;
-    private float Hard_MinZ = -19;
+    private float Hard_MinX = -29;
+    private float Hard_MinZ = -29;
 
     ///Animations///
     public Animator anim;
