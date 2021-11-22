@@ -39,10 +39,10 @@ public class Player_Movement : MonoBehaviour
 
     public Vector3 Position_Change;
 
-    private float Easy_MaxX = 23;
-    private float Easy_MaxZ = 17;
-    private float Easy_MinX = -20;
-    private float Easy_MinZ = -8;
+    private float Easy_MaxX = 11;
+    private float Easy_MaxZ = 11;
+    private float Easy_MinX = -11;
+    private float Easy_MinZ = -12;
 
     private float Normal_MaxX = 23;
     private float Normal_MaxZ = 17;
@@ -268,7 +268,7 @@ public class Player_Movement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag =="ground") 
+        if (other.gameObject.tag == "ground") 
         {
             gc.isGrounded = true;
         

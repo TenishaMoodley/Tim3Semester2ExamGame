@@ -9,46 +9,64 @@ public class connectionTimer : MonoBehaviour
 {
     public Slider TimerSlider;
    // public TMP_Text TimerText;
-    public float seperationTime;
-    
+    public float initialSeperationTime;
+    public float continuedSeperationTime;
+    public General g;
+    public Manager m;
 
     private bool stopTimer;
+
 
     void Start()
     {
         //CollectableTime = defaultTime;
-        //stopTimer = false;
-        TimerSlider.maxValue = seperationTime;
-        TimerSlider.value = seperationTime;
+       
+        stopTimer = false;
+        TimerSlider.maxValue = initialSeperationTime;
+        TimerSlider.value = initialSeperationTime;
+    }
+
+    private void Awake()
+    {
+        gameObject.SetActive(true);
     }
 
     private void Update()
     {
-        float timeRN = seperationTime - Time.time;
+        float timeRN = initialSeperationTime - Time.time;
         int minutes = Mathf.FloorToInt(timeRN / 60);
         int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
 
         string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
+       
         if (timeRN <= 0)
         {
-            // stopTimer = true;
-            timeRN = seperationTime;
-            TimerSlider.value = timeRN;
+            stopTimer = true;
             //gameObject.SetActive(false);
+
+            if (m.score > 0)
+            {
+                m.score--;
+                Debug.Log("score minuesed");
+            }
+            
+            StartCoroutine(waitBeforeDeactivate());
+            
         }
+
         if (stopTimer == false)
         {
-            //TimerText.text = TextTime;
             TimerSlider.value = timeRN;
-
+            
         }
 
     }
 
-    void timer() 
+    IEnumerator waitBeforeDeactivate()
     {
-       
-       
+        yield return new WaitForSeconds(0.00001f);
+
+        gameObject.SetActive(false);
     }
 }

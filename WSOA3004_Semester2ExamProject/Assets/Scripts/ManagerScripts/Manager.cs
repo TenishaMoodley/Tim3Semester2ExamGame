@@ -11,6 +11,8 @@ public class Manager : MonoBehaviour
     public TMP_Text Score_Txt_UI;
     public GameObject ArrowUI;
     public GameObject WASDUI;
+    public GameObject LShiftUI;
+    public GameObject RShiftUI;
     public int TotalCollectables;
     public destroyObject DestoryObjectScript;
 
@@ -45,7 +47,7 @@ public class Manager : MonoBehaviour
         StartCoroutine(Destroyself());
 
 
-        Score_Txt_UI.text = "Score: "+score;
+        Score_Txt_UI.text = "Score: " + score;
         Score_Txt_End.text = "Score: " + score;
 
         //The game controls UI disappearing after interacted with
@@ -59,6 +61,15 @@ public class Manager : MonoBehaviour
             WASDUI.SetActive(false);
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            LShiftUI.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightShift))
+        {
+            RShiftUI.SetActive(false);
+        }
     }
 
     IEnumerator Destroyself()
