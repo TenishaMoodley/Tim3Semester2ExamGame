@@ -39,8 +39,14 @@ public class doorTrigger : MonoBehaviour
             //switchCount++; 
            door.transform.position += new Vector3(0f, 2.4f, 0f);
         }
-       
-        
+
+        if (col.gameObject.tag == "Adam")
+        {
+            //switchCount++; 
+            door.transform.position += new Vector3(0f, 2.4f, 0f);
+        }
+
+
     }
 
     private void OnTriggerExit(Collider col)
@@ -52,7 +58,13 @@ public class doorTrigger : MonoBehaviour
             door.transform.position -= new Vector3(0.011f, 2.4f, 1.02f);
         }
 
-           
+        if (col.gameObject.tag == "Adam")
+        {
+            //switchCount++; 
+            door.transform.position -= new Vector3(0f, 2.4f, 0f);
+        }
+
+
 
     }
 }
