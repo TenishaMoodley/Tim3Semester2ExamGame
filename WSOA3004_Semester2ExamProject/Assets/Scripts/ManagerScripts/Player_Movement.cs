@@ -24,7 +24,7 @@ public class Player_Movement : MonoBehaviour
     //private float yForce; //gravity 
 
     ///Jump///
-    public bool isGrounded = true;
+    public groundCheck gc;
    
 
     [SerializeField]
@@ -50,7 +50,7 @@ public class Player_Movement : MonoBehaviour
     private float Normal_MinZ = -8;
 
     private float Hard_MaxX = 19;
-    private float Hard_MaxZ = 54;
+    private float Hard_MaxZ = 12;
     private float Hard_MinX = -29;
     private float Hard_MinZ = -29;
 
@@ -161,12 +161,18 @@ public class Player_Movement : MonoBehaviour
 
     private void HandleJump()
     {
-        if (Input.GetKey((KeyCode)Jump) && isGrounded)
+        if (Input.GetKey((KeyCode)Jump) && gc.isGrounded)
         {
             rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-           // yForce = jumpForce;
+            gc.isGrounded = false;
+            // yForce = jumpForce;
+            anim.SetBool("isJumping", true);
         }
+        /*else if (Input.GetKey((KeyCode)Jump) && !isGrounded) 
+        {
+            isGrounded = false;
+            anim.SetBool("isJumping", false);
+        }*/
 
       
     }
@@ -260,34 +266,22 @@ public class Player_Movement : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            isGrounded = true;
-            //isOnBox = false;
-        }
-
-      
-
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            isGrounded = true; ;
-          
-
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag =="ground") 
         {
-            isGrounded = true;
+            gc.isGrounded = true;
         
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag != "ground")
+        {
+            gc.isGrounded = false;
+            anim.SetBool("isJumping", false);
+
         }
     }
 }
