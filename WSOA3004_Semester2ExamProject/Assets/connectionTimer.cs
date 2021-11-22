@@ -13,6 +13,7 @@ public class connectionTimer : MonoBehaviour
     public float continuedSeperationTime;
     public General g;
     public Manager m;
+    
 
     private bool stopTimer;
 
@@ -33,7 +34,8 @@ public class connectionTimer : MonoBehaviour
 
     private void Update()
     {
-        float timeRN = initialSeperationTime - Time.time;
+        
+        float timeRN = initialSeperationTime - Time.time; // Time.time cant be reset. 
         int minutes = Mathf.FloorToInt(timeRN / 60);
         int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
 
