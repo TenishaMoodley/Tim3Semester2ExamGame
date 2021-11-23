@@ -515,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1026,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c908257d9358244a967138ca9dd18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ctScript: {fileID: 981445036}
   Line_GO: {fileID: 1219028902}
   Bean1_GO: {fileID: 489258429}
   Bean2_GO: {fileID: 1382540025}
@@ -2804,6 +2805,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
   m_PrefabInstance: {fileID: 97769410}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &489258430 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
+  m_PrefabInstance: {fileID: 97769410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &489258431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
@@ -2834,7 +2840,7 @@ MonoBehaviour:
   vericalAxis: Vertical_1
   angleOffset: 90
   Position_Change: {x: 0, y: 0, z: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 489258430}
   Teleporting: 0
   enteredPortal: {fileID: 0}
   pickedUp: 0
@@ -2855,6 +2861,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &489258434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489258429}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b775b27c48d70548971dd8a36fcb516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jump: 0
+  rBody: {fileID: 0}
 --- !u!136 &489258435
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4553,8 +4573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 981445035}
-  initialSeperationTime: 2
-  continuedSeperationTime: 1
+  initialSeperationTime: 8
+  continuedSeperationTime: 0
   g: {fileID: 98234736}
   m: {fileID: 1009400332}
 --- !u!1 &984650432
@@ -7630,7 +7650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.47
+      value: 7.42
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7638,7 +7658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.74
+      value: -19.07
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalRotation.w
