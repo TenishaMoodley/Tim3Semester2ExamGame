@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class General : MonoBehaviour
 {
+    public connectionTimer ctScript;
     
     public GameObject Line_GO;
 
@@ -22,6 +23,9 @@ public class General : MonoBehaviour
         if (Distance > Max_Distance)
         {
             Line_GO.SetActive(false);
+            ctScript.TimerSlider.maxValue = ctScript.initialSeperationTime;
+            ctScript.TimerSlider.value = ctScript.initialSeperationTime;
+              
 
         }
         else

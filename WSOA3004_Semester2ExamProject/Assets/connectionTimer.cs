@@ -20,11 +20,12 @@ public class connectionTimer : MonoBehaviour
 
     void Start()
     {
+        TimerSlider.value = 0;
         //CollectableTime = defaultTime;
        
         stopTimer = false;
-        TimerSlider.maxValue = initialSeperationTime;
-        TimerSlider.value = initialSeperationTime;
+       TimerSlider.maxValue = 0;
+        //TimerSlider.value = initialSeperationTime;
     }
 
     private void Awake()
@@ -35,7 +36,7 @@ public class connectionTimer : MonoBehaviour
     private void Update()
     {
         
-        float timeRN = initialSeperationTime - Time.time; // Time.time cant be reset. 
+        float timeRN = initialSeperationTime - Time.timeSinceLevelLoad; // Time.time cant be reset. 
         int minutes = Mathf.FloorToInt(timeRN / 60);
         int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
 
@@ -69,6 +70,6 @@ public class connectionTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(0.00001f);
 
-        gameObject.SetActive(false);
+       // gameObject.SetActive(false);
     }
 }
