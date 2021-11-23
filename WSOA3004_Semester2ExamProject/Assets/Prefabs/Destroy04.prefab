@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 2549545568705082682}
   - component: {fileID: 5221417956049736727}
   m_Layer: 0
-  m_Name: Destroy02
+  m_Name: Destroy04
   m_TagString: Destroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 2980907519038202323}
   TimerText: {fileID: 4952147434188784557}
-  CollectableTime: 120
+  CollectableTime: 60
   defaultTime: 10
 --- !u!114 &824857409728458711
 MonoBehaviour:

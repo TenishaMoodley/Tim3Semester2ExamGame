@@ -21,12 +21,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Hard Info.unity
     guid: 0f3839d009a81034e89a7fb02b1a0d86
   - enabled: 1
-    path: Assets/Scenes/EasyScene.unity
+    path: Assets/Scenes/EasyScene 1.unity
     guid: 36c29e8ecbf228b448ae3fc2d67ea230
   - enabled: 1
-    path: Assets/Scenes/NormalScene.unity
+    path: Assets/Scenes/EasyScene 2.unity
+    guid: 86ee5a26216ca674ab2001c9f60c1626
+  - enabled: 1
+    path: Assets/Scenes/EasyScene 3.unity
+    guid: e3915abcbcb6a1c43b18bbdfb44b26c7
+  - enabled: 1
+    path: Assets/Scenes/NormalScene 1.unity
     guid: 33ebdc7a9d7830a44beaaabe6f50852f
   - enabled: 1
-    path: Assets/Scenes/HardScene.unity
+    path: Assets/Scenes/NormalScene 2.unity
+    guid: e9a0cc0a0b733f344a546faf7836ca0a
+  - enabled: 1
+    path: Assets/Scenes/NormalScene 3.unity
+    guid: 2864e96c2b620b24f9826fac2d2293c8
+  - enabled: 1
+    path: Assets/Scenes/HardScene 1.unity
     guid: 8b02afd07ec40b54ebd2c4896b87aa2b
+  - enabled: 1
+    path: Assets/Scenes/HardScene 2.unity
+    guid: 724e7048d466d2844b6394221f51e510
+  - enabled: 1
+    path: Assets/Scenes/HardScene 3.unity
+    guid: 8bd0ce4e2993a53459937857fd5afa48
   m_configObjects: {}
