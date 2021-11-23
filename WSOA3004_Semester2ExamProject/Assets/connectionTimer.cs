@@ -8,23 +8,26 @@ using TMPro;
 public class connectionTimer : MonoBehaviour
 {
     public Slider TimerSlider;
-   // public TMP_Text TimerText;
+    // public TMP_Text TimerText;
     public float initialSeperationTime;
     public float continuedSeperationTime;
     public General g;
     public Manager m;
-    
+
+  
 
     private bool stopTimer;
 
 
     void Start()
     {
+
+
         TimerSlider.value = 0;
         //CollectableTime = defaultTime;
-       
+
         stopTimer = false;
-       TimerSlider.maxValue = 0;
+        TimerSlider.maxValue = 0;
         //TimerSlider.value = initialSeperationTime;
     }
 
@@ -35,14 +38,13 @@ public class connectionTimer : MonoBehaviour
 
     private void Update()
     {
-        
         float timeRN = initialSeperationTime - Time.timeSinceLevelLoad; // Time.time cant be reset. 
         int minutes = Mathf.FloorToInt(timeRN / 60);
         int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
 
         string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-       
+
         if (timeRN <= 0)
         {
             stopTimer = true;
@@ -53,15 +55,15 @@ public class connectionTimer : MonoBehaviour
                 m.score--;
                 Debug.Log("score minuesed");
             }
-            
+
             StartCoroutine(waitBeforeDeactivate());
-            
+
         }
 
         if (stopTimer == false)
         {
             TimerSlider.value = timeRN;
-            
+
         }
 
     }
@@ -70,6 +72,8 @@ public class connectionTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(0.00001f);
 
-       // gameObject.SetActive(false);
+        // gameObject.SetActive(false);
     }
 }
+
+   
