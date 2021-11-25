@@ -44,7 +44,7 @@ public class pickUp2 : MonoBehaviour
 
             BarrelUI.SetActive(true);
             //GetComponent<Rigidbody>().useGravity = false;
-            //GetComponent<Rigidbody>().mass = 0f;
+            GetComponent<Rigidbody>().mass = 0f;
             this.transform.position = destination.position;
             this.transform.parent = GameObject.Find("pickedUp").transform;
             anim.SetBool("isCarrying", true);
