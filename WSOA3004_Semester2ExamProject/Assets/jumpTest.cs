@@ -31,11 +31,5 @@ public class jumpTest : MonoBehaviour
             isGrounded2 = true;
         
         }
-
-       
-
-
-
-
     }
 }

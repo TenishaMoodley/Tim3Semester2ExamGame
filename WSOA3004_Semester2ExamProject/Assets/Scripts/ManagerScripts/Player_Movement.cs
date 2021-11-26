@@ -17,15 +17,13 @@ public class Player_Movement : MonoBehaviour
 
     public float speed;
 
-    /// Additions///
+    ///Jump///
     public KeyCode Jump;
-    public float jumpForce;
     public Rigidbody rBody;
+    public bool isGrounded2 = true;
     //private float yForce; //gravity 
 
-    ///Jump///
-    public groundCheck gc;
-   
+
 
     [SerializeField]
     protected string horizontalAxis;
@@ -143,8 +141,14 @@ public class Player_Movement : MonoBehaviour
             anim.SetBool("isRunningL", false);
         }
 
-        HandleJump();
-        
+        if (Input.GetKey(Jump) && isGrounded2 == true) //(Input.GetKey((KeyCode)Jump)   
+        {
+            rBody.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+            isGrounded2 = false; // is false when jump button is pressed. 
+        }
+
+
+
 
         var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
 
@@ -157,27 +161,6 @@ public class Player_Movement : MonoBehaviour
 
     }
 
-  
-
-    private void HandleJump()
-    {
-        if (Input.GetKey((KeyCode)Jump) && gc.isGrounded)
-        {
-            rBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            gc.isGrounded = false;
-            // yForce = jumpForce;
-            anim.SetBool("isJumping", true);
-        }
-        /*else if (Input.GetKey((KeyCode)Jump) && !isGrounded) 
-        {
-            isGrounded = false;
-            anim.SetBool("isJumping", false);
-        }*/
-
-      
-    }
-
-    
 
     private void ClampPosition()
     {
@@ -266,22 +249,33 @@ public class Player_Movement : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*  private void OnTriggerEnter(Collider other)
+      {
+          if (other.gameObject.tag == "ground") 
+          {
+              gc.isGrounded = true;
+
+          }
+      }
+
+      private void OnTriggerExit(Collider other)
+      {
+          if (other.gameObject.tag != "ground")
+          {
+              gc.isGrounded = false;
+              anim.SetBool("isJumping", false);
+
+          }
+      }*/
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "ground") 
+        if (collision.gameObject.tag == "ground")
         {
-            gc.isGrounded = true;
-        
+            isGrounded2 = true;
+
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag != "ground")
-        {
-            gc.isGrounded = false;
-            anim.SetBool("isJumping", false);
 
-        }
-    }
 }
