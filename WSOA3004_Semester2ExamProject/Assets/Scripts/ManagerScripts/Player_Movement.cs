@@ -143,7 +143,7 @@ public class Player_Movement : MonoBehaviour
 
         if (Input.GetKey(Jump) && isGrounded2 == true) //(Input.GetKey((KeyCode)Jump)   
         {
-            rBody.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+            rBody.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
             isGrounded2 = false; // is false when jump button is pressed. 
         }
 

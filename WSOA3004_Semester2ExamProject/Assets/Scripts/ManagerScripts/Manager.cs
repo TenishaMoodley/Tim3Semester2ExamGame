@@ -13,12 +13,12 @@ public class Manager : MonoBehaviour
     public GameObject WASDUI;
     public GameObject LShiftUI;
     public GameObject RShiftUI;
+    public GameObject BarrelUI;
     public int TotalCollectables;
     public destroyObject DestoryObjectScript;
+    public GameObject EndPanel;
 
     private int Destroyed;
-
-    public GameObject EndPanel;
 
     private void Start()
     {
@@ -70,7 +70,14 @@ public class Manager : MonoBehaviour
         {
             RShiftUI.SetActive(false);
         }*/
+
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        {
+            BarrelUI.SetActive(false);
+        }
     }
+
+   
 
     IEnumerator Destroyself()
     {

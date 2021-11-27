@@ -4878,8 +4878,8 @@ GameObject:
   - component: {fileID: 2325721033169164872}
   - component: {fileID: 2510727410113771036}
   - component: {fileID: 2510727410113771038}
-  - component: {fileID: 2510727410113771039}
   - component: {fileID: 4862971368059368526}
+  - component: {fileID: 4397135478294566410}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Barrel
@@ -4992,27 +4992,10 @@ BoxCollider:
   m_GameObject: {fileID: 4630446926377055814}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7404094, y: 0.74209476, z: 0.7553654}
-  m_Center: {x: 0.0013868809, y: 0.5951086, z: -0.041795254}
---- !u!114 &2510727410113771039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630446926377055814}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94d7a395d65f3d5499e8d316f6371d39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followObject: {fileID: 0}
-  speed: 0
-  destination: {fileID: 0}
-  BarrelUI: {fileID: 0}
-  anim: {fileID: 0}
+  m_Size: {x: 1.2719412, y: 0.74209476, z: 1.2300339}
+  m_Center: {x: 0.1019578, y: 0.5951086, z: -0.052441597}
 --- !u!65 &4862971368059368526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5026,6 +5009,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7937293, y: 0.9738289, z: 0.76732206}
   m_Center: {x: 0.032487154, y: 0.47924155, z: -0.03314805}
+--- !u!114 &4397135478294566410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630446926377055814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7352820933531873526
 GameObject:
   m_ObjectHideFlags: 0
@@ -5042,7 +5037,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4192407051730222633
 Transform:
   m_ObjectHideFlags: 0
