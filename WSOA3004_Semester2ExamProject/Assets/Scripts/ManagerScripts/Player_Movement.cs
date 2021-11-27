@@ -47,10 +47,10 @@ public class Player_Movement : MonoBehaviour
     private float Normal_MinX = -20;
     private float Normal_MinZ = -8;
 
-    private float Hard_MaxX = 19;
-    private float Hard_MaxZ = 12;
-    private float Hard_MinX = -29;
-    private float Hard_MinZ = -29;
+    private float Hard_MaxX = 16;
+    private float Hard_MaxZ = 10;
+    private float Hard_MinX = -26;
+    private float Hard_MinZ = -28;
 
     ///Animations///
     public Animator anim;
@@ -143,7 +143,7 @@ public class Player_Movement : MonoBehaviour
 
         if (Input.GetKey(Jump) && isGrounded2 == true) //(Input.GetKey((KeyCode)Jump)   
         {
-            rBody.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+            rBody.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
             isGrounded2 = false; // is false when jump button is pressed. 
         }
 
@@ -166,7 +166,7 @@ public class Player_Movement : MonoBehaviour
     {
         Position_Change = this.gameObject.transform.position;
 
-        if (currentScene.name == "EasyScene")
+        if (currentScene.name == "EasyScene 1" || currentScene.name == "EasyScene 2" || currentScene.name == "EasyScene 3")
         {
             if (Position_Change.x >= Easy_MaxX)
             {
@@ -192,7 +192,7 @@ public class Player_Movement : MonoBehaviour
                 this.transform.position = Position_Change;
             }
         }
-        else if(currentScene.name == "NormalScene")
+        else if(currentScene.name == "NormalScene 1" || currentScene.name == "NormalScene 2" || currentScene.name == "NormalScene 3")
         {
             if (Position_Change.x >= Normal_MaxX)
             {
@@ -219,7 +219,7 @@ public class Player_Movement : MonoBehaviour
             }
 
         }
-        else if(currentScene.name == "HardScene")
+        else if(currentScene.name == "HardScene 1" || currentScene.name == "HardScene 2" || currentScene.name == "HardScene 3")
         {
             if (Position_Change.x >= Hard_MaxX)
             {
