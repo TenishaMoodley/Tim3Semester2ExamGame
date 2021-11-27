@@ -5282,7 +5282,7 @@ MonoBehaviour:
   Move_Left: 276
   Move_right: 275
   speed: 5
-  Jump: 303
+  Jump: 0
   rBody: {fileID: 1382540029}
   isGrounded2: 1
   horizontalAxis: Horizontal_2

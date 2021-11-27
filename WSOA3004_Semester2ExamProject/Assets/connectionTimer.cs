@@ -45,7 +45,7 @@ public class connectionTimer : MonoBehaviour
         string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
 
-        if (timeRN <= 0)
+        /*if (timeRN <= 0)
         {
             stopTimer = true;
             //gameObject.SetActive(false);
@@ -58,7 +58,7 @@ public class connectionTimer : MonoBehaviour
 
             StartCoroutine(waitBeforeDeactivate());
 
-        }
+        }*/
 
         if (stopTimer == false)
         {

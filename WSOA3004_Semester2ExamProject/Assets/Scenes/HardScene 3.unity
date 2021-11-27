@@ -5220,7 +5220,7 @@ MonoBehaviour:
   RShiftUI: {fileID: 1787037379}
   BarrelUI: {fileID: 1533642670}
   TotalCollectables: 8
-  DestoryObjectScript: {fileID: 5177972992567908771, guid: 6cd9d1980736bf8429573afc7a9bc168, type: 3}
+  DestoryObjectScript: {fileID: 6034718106167792930, guid: dcc7eae332e53054aa7d1e326d3a4118, type: 3}
   EndPanel: {fileID: 1954140344}
 --- !u!4 &1009400333
 Transform:
@@ -7462,7 +7462,7 @@ MonoBehaviour:
   Move_Left: 276
   Move_right: 275
   speed: 5
-  Jump: 303
+  Jump: 0
   rBody: {fileID: 1382540029}
   isGrounded2: 1
   horizontalAxis: Horizontal_2
@@ -8266,7 +8266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551552533}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.5885, y: 25.314, z: -48.4}
+  m_LocalPosition: {x: -3.5885, y: 25.314, z: -47.2}
   m_LocalScale: {x: 0.5, y: 6.20928, z: 53.28195}
   m_Children: []
   m_Father: {fileID: 866396697}

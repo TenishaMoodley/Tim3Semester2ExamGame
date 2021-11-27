@@ -4398,7 +4398,7 @@ MonoBehaviour:
   RShiftUI: {fileID: 1484701458}
   BarrelUI: {fileID: 1533642670}
   TotalCollectables: 8
-  DestoryObjectScript: {fileID: 5177972992567908771, guid: 6cd9d1980736bf8429573afc7a9bc168, type: 3}
+  DestoryObjectScript: {fileID: 8767724345426560828, guid: 92f4b636930fc9f438f03467372d9109, type: 3}
   EndPanel: {fileID: 1954140344}
 --- !u!4 &1009400333
 Transform:
@@ -6110,7 +6110,7 @@ MonoBehaviour:
   Move_Left: 276
   Move_right: 275
   speed: 5
-  Jump: 303
+  Jump: 0
   rBody: {fileID: 1382540029}
   isGrounded2: 1
   horizontalAxis: Horizontal_2

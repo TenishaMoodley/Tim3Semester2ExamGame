@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sphereAnimController : MonoBehaviour
+public class SphereAnim2 : MonoBehaviour
 {
-    private Animator anim; 
+    private Animator anim;
     
     void Start()
     {
@@ -14,17 +14,17 @@ public class sphereAnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        StartCoroutine(pAnim1());
+
+        StartCoroutine(pAnim2());
 
     }
 
-    IEnumerator pAnim1() 
+    IEnumerator pAnim2()
     {
-        yield return new WaitForSeconds(100);
+        yield return new WaitForSeconds(70);
         anim.SetBool("isExpanding", true);
         Debug.Log("The wait is over");
-       
-    
+
+
     }
 }

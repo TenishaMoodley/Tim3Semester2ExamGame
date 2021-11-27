@@ -44,8 +44,15 @@ public class Manager : MonoBehaviour
     {
         Debug.Log("Destroyed: " + Destroyed);
 
-        StartCoroutine(Destroyself());
+        if (score == TotalCollectables)
+        {
+            DestroyedAdd();
+            EndPanel.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+        }
 
+        StartCoroutine(Destroyself());
 
         Score_Txt_UI.text = "Score: " + score;
         Score_Txt_End.text = "Score: " + score;
@@ -84,9 +91,10 @@ public class Manager : MonoBehaviour
         yield return new WaitForSeconds(DestoryObjectScript.CollectableTime);
         /*GameObject manager = GameObject.Find("Manager");
         manager.GetComponent<Manager>().DestroyedAdd();*/
+        
         DestroyedAdd();
 
-        if ((score + Destroyed) == TotalCollectables || score == TotalCollectables || Destroyed == TotalCollectables)
+        if ((score + Destroyed) == TotalCollectables || Destroyed == TotalCollectables)
         {
             EndPanel.SetActive(true);
             Time.timeScale = 0f;
