@@ -13,7 +13,7 @@ public class HardSceneAdvance
 
     private HardSceneAdvance()
     {
-        scenarios = new List<int> { 11 };
+        scenarios = new List<int> { 11 , 12, 13};
     }
 
     public static HardSceneAdvance Instance

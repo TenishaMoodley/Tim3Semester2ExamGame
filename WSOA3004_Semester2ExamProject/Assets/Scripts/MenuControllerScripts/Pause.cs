@@ -7,8 +7,8 @@ public class Pause : MonoBehaviour
 {
     bool paused = false;
     public GameObject pausePanel;
-    public GameObject ArrowUI;
-    public GameObject WASDUI;
+    public GameObject GameUI;
+    
 
 
     private void Start()
@@ -39,8 +39,8 @@ public class Pause : MonoBehaviour
             pausePanel.SetActive(true);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
-            ArrowUI.SetActive(false);
-            WASDUI.SetActive(false);
+            GameUI.SetActive(false);
+            
         }
     }
 }

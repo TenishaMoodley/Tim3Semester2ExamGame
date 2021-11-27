@@ -66,10 +66,10 @@ public class Manager : MonoBehaviour
             LShiftUI.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.RightShift))
+        /*if (Input.GetKeyDown(KeyCode.RightShift))
         {
             RShiftUI.SetActive(false);
-        }
+        }*/
     }
 
     IEnumerator Destroyself()
