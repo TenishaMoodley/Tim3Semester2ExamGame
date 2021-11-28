@@ -4,23 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class destroyObject : MonoBehaviour
+public class TimerCount : MonoBehaviour
 {
-    public Slider TimerSlider;
-    public TMP_Text TimerText;
     public float CollectableTime;
     //public TMP_Text Timer_Txt_End;
-    //public TMP_Text Timer_Txt_UI;
-    //public float defaultTime;
-
+    public TMP_Text Timer_Txt_UI;
     private bool stopTimer;
 
-    void Start()
+    private void Start()
     {
-        //CollectableTime = defaultTime;
         stopTimer = false;
-        TimerSlider.maxValue = CollectableTime;
-        TimerSlider.value = CollectableTime;
     }
 
     private void Update()
@@ -34,15 +27,13 @@ public class destroyObject : MonoBehaviour
         if (timeRN <= 0)
         {
             stopTimer = true;
-            gameObject.SetActive(false);
+            
             //Timer_Txt_End.text = TextTime;
         }
         if (stopTimer == false)
         {
-            TimerText.text = TextTime;
-            TimerSlider.value = timeRN;
-            //Timer_Txt_UI.text = TextTime;
+            
+            Timer_Txt_UI.text = TextTime;
         }
-
     }
 }

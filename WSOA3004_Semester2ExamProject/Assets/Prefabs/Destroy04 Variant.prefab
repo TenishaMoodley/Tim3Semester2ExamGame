@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5177972992567908771, guid: 0f893395a4f95964982d2c17a63da32d, type: 3}
       propertyPath: CollectableTime
-      value: 140
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7192873842887136064, guid: 0f893395a4f95964982d2c17a63da32d, type: 3}
       propertyPath: m_RootOrder

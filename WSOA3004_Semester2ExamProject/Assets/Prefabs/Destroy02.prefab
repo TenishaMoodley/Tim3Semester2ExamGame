@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4952147434188784556}
   - component: {fileID: 4952147434188784557}
   m_Layer: 5
-  m_Name: TimerText
+  m_Name: TimerSpheres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,8 +606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 2980907519038202323}
   TimerText: {fileID: 4952147434188784557}
-  CollectableTime: 120
-  defaultTime: 10
+  CollectableTime: 60
+  Timer_Txt_End: {fileID: 0}
+  Timer_Txt_UI: {fileID: 0}
 --- !u!114 &824857409728458711
 MonoBehaviour:
   m_ObjectHideFlags: 0

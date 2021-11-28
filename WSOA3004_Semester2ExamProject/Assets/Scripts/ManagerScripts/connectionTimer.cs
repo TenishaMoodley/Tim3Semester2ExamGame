@@ -68,8 +68,8 @@ public class connectionTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        //gameObject.SetActive(false);
-        EndPanel.SetActive(true);
+        
+        //EndPanel.SetActive(true);
     }
 }
 

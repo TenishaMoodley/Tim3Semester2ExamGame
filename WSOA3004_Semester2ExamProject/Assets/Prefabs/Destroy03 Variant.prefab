@@ -19,6 +19,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1397776460558835201, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
+      propertyPath: CollectableTime
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 1461603562808043857, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

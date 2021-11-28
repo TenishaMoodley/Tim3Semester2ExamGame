@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
     public int TotalCollectables;
     public destroyObject DestoryObjectScript;
     public GameObject EndPanel;
+    public GameObject GameUI;
 
     private int Destroyed;
 
@@ -48,6 +49,7 @@ public class Manager : MonoBehaviour
         {
             DestroyedAdd();
             EndPanel.SetActive(true);
+            GameUI.SetActive(false);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
         }
@@ -82,6 +84,7 @@ public class Manager : MonoBehaviour
         {
             BarrelUI.SetActive(false);
         }
+
     }
 
    
@@ -97,6 +100,7 @@ public class Manager : MonoBehaviour
         if ((score + Destroyed) == TotalCollectables || Destroyed == TotalCollectables)
         {
             EndPanel.SetActive(true);
+            GameUI.SetActive(false);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
         }
