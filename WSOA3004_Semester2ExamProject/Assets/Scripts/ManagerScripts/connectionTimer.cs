@@ -13,16 +13,12 @@ public class connectionTimer : MonoBehaviour
     public float continuedSeperationTime;
     public General g;
     public Manager m;
-
-  
-
-    private bool stopTimer;
-
+    public bool stopTimer;
+    public GameObject EndPanel;
 
     void Start()
     {
-
-
+        EndPanel.SetActive(false);
         TimerSlider.value = 0;
         //CollectableTime = defaultTime;
 
@@ -45,34 +41,35 @@ public class connectionTimer : MonoBehaviour
         string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
 
-        /*if (timeRN <= 0)
+        if (timeRN <= 0)
         {
             stopTimer = true;
             //gameObject.SetActive(false);
 
-            if (m.score > 0)
+           /*if (m.score > 0)
             {
                 m.score--;
                 Debug.Log("score minuesed");
-            }
+            }*/
 
             StartCoroutine(waitBeforeDeactivate());
 
-        }*/
+        }
 
         if (stopTimer == false)
         {
             TimerSlider.value = timeRN;
 
         }
-
+       
     }
 
     IEnumerator waitBeforeDeactivate()
     {
-        yield return new WaitForSeconds(0.00001f);
+        yield return new WaitForSeconds(1f);
 
-        // gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        EndPanel.SetActive(true);
     }
 }
 

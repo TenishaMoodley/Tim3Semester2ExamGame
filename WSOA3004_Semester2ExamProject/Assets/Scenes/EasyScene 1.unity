@@ -8970,6 +8970,8 @@ MonoBehaviour:
   continuedSeperationTime: 0
   g: {fileID: 98234736}
   m: {fileID: 1009400332}
+  stopTimer: 0
+  EndPanel: {fileID: 1954140344}
 --- !u!114 &1957068829
 MonoBehaviour:
   m_ObjectHideFlags: 0

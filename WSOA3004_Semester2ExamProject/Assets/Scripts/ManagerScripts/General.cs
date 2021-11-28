@@ -33,6 +33,7 @@ public class General : MonoBehaviour
                 Line_GO.SetActive(false);
                 ctScript.TimerSlider.maxValue = ctScript.initialSeperationTime;
                 ctScript.TimerSlider.value = ctScript.initialSeperationTime;
+                ctScript.stopTimer = false;
 
             }
 
@@ -42,6 +43,7 @@ public class General : MonoBehaviour
         else
         {
             Line_GO.SetActive(true);
+            ctScript.stopTimer = true;
 
         }
     }
