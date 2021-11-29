@@ -10595,7 +10595,7 @@ GameObject:
   - component: {fileID: 1054886780893406168}
   - component: {fileID: 1054886780893406169}
   m_Layer: 0
-  m_Name: Ground-wall (1)
+  m_Name: Hidden wall
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
