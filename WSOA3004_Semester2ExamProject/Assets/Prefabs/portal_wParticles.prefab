@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2089874201813855020}
   - component: {fileID: 2063080686695789474}
-  - component: {fileID: 7427380658669233058}
   m_Layer: 0
   m_Name: portal_wParticles
   m_TagString: Untagged
@@ -51,22 +50,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3590417, y: 0.034538984, z: 1.460619}
   m_Center: {x: -0.03936839, y: 1.0026389, z: -0.02858448}
---- !u!114 &7427380658669233058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606493342855491990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191e2f119e9609942b5250613cdb0ec0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  linkedPortal: {fileID: 0}
-  jammoLocation: {fileID: 0}
-  PortalAnim: {fileID: 0}
-  generalScript: {fileID: 0}
 --- !u!1 &1861521921450942471
 GameObject:
   m_ObjectHideFlags: 0

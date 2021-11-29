@@ -31,13 +31,12 @@ public class General : MonoBehaviour
             if (time < Time.time)
             {
                 Line_GO.SetActive(false);
-                ctScript.TimerSlider.maxValue = ctScript.initialSeperationTime;
-                ctScript.TimerSlider.value = ctScript.initialSeperationTime;
+                ctScript.ResetConnectionTimer();
+                ctScript.TimerSlider.maxValue = ctScript.maxSeparationTime;
+                ctScript.TimerSlider.value = ctScript.maxSeparationTime;
                 ctScript.stopTimer = false;
 
             }
-
-
 
         }
         else

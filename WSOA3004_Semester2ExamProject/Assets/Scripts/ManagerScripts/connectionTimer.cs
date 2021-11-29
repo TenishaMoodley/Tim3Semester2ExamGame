@@ -9,12 +9,17 @@ public class connectionTimer : MonoBehaviour
 {
     public Slider TimerSlider;
     // public TMP_Text TimerText;
-    public float initialSeperationTime;
+    public float maxSeparationTime;
+    
     public float continuedSeperationTime;
+
     public General g;
     public Manager m;
     public bool stopTimer;
+    public bool isTiming;
     public GameObject EndPanel;
+
+    private float timeAtDisconnection;
 
     void Start()
     {
@@ -34,42 +39,43 @@ public class connectionTimer : MonoBehaviour
 
     private void Update()
     {
-        float timeRN = initialSeperationTime - Time.timeSinceLevelLoad; // Time.time cant be reset. 
-        int minutes = Mathf.FloorToInt(timeRN / 60);
-        int seconds = Mathf.FloorToInt(timeRN - minutes * 60);
-
-        string TextTime = string.Format("{0:0}:{1:00}", minutes, seconds);
-
-
-        if (timeRN <= 0)
+        if (!stopTimer)
         {
-            stopTimer = true;
-            //gameObject.SetActive(false);
 
-           /*if (m.score > 0)
+            continuedSeperationTime += Time.deltaTime;
+            Debug.Log(continuedSeperationTime);
+
+            TimerSlider.value = maxSeparationTime - continuedSeperationTime;                                                                
+
+
+            if (continuedSeperationTime >= maxSeparationTime)
             {
-                m.score--;
-                Debug.Log("score minuesed");
-            }*/
+                stopTimer = true;
 
-            StartCoroutine(waitBeforeDeactivate());
+                StartCoroutine(waitBeforeDeactivate());
 
-        }
-
-        if (stopTimer == false)
-        {
-            TimerSlider.value = timeRN;
+            }
 
         }
-       
+
     }
+
+    public void ResetConnectionTimer()
+    {
+        if ( stopTimer )
+        {
+            timeAtDisconnection = Time.timeSinceLevelLoad;
+            stopTimer = false;
+        }
+    }
+
+
 
     IEnumerator waitBeforeDeactivate()
     {
         yield return new WaitForSeconds(1f);
 
-        
-        //EndPanel.SetActive(true);
+        EndPanel.SetActive(true);
     }
 }
 

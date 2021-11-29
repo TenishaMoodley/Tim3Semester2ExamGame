@@ -56,7 +56,7 @@ public class Manager : MonoBehaviour
 
         StartCoroutine(Destroyself());
 
-        Score_Txt_UI.text = "Score: " + score;
+        Score_Txt_UI.text = "" + score;
         Score_Txt_End.text = "Score: " + score;
 
         //The game controls UI disappearing after interacted with
