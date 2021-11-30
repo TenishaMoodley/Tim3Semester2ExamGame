@@ -11,28 +11,12 @@ public class doorTrigger : MonoBehaviour
     public int switchCount;
     //public Rigidbody Jammo;
     public Player_Movement JammoMovementScript;
+    public GameObject SwitchUI;
 
     private void Start()
     {
         switchCount = 0;
 
-    }
-
-
-    // Start is called before the first frame update
-    private void Update()
-    {
-       /* if (switchCount == 1)
-        {
-           
-
-        }
-        else 
-        {
-            //door.transform.position -= new Vector3(0f, 2.4f, 0f);
-
-        }*/
-        
     }
 
     private void OnTriggerEnter(Collider col)
@@ -42,6 +26,7 @@ public class doorTrigger : MonoBehaviour
             //switchCount++; 
            door.transform.position += new Vector3(0f, 2.4f, 0f);
             JammoMovementScript.enabled = true;
+            SwitchUI.SetActive(false);
         }
 
         if (col.gameObject.tag == "Adam")
@@ -50,6 +35,7 @@ public class doorTrigger : MonoBehaviour
             door.transform.position += new Vector3(0f, 2.4f, 0f);
             //Jammo.constraints = RigidbodyConstraints.FreezePosition;
             JammoMovementScript.enabled = true;
+            SwitchUI.SetActive(false);
         }
 
 

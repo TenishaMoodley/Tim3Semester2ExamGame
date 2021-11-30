@@ -8,8 +8,8 @@ public class Portal : MonoBehaviour
     public Transform jammoLocation; 
     public Animator PortalAnim;
     public Player_Movement JammoMovementScript;
-    
-    public General generalScript;
+    public GameObject SwitchUI;
+    //public General generalScript;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -35,6 +35,7 @@ public class Portal : MonoBehaviour
                 fountain.enteredPortal = gameObject;
                 //Jammo.constraints = RigidbodyConstraints.FreezePosition;
                 JammoMovementScript.enabled = false;
+                SwitchUI.SetActive(true);
             }
         }
     }

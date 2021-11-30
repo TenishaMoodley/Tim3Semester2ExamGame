@@ -18,6 +18,7 @@ public class connectionTimer : MonoBehaviour
     public bool stopTimer;
     public bool isTiming;
     public GameObject EndPanel;
+    public GameObject GameUI;
 
     private float timeAtDisconnection;
 
@@ -76,6 +77,9 @@ public class connectionTimer : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         EndPanel.SetActive(true);
+        GameUI.SetActive(false);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
 

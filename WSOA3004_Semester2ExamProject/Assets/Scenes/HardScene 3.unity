@@ -327,8 +327,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1851209866}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 11024455}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &11024457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -711,8 +711,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1116689144}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 75309364}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &75309366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -913,18 +913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
---- !u!114 &94783589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94783587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &97769410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2019,6 +2007,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &180003946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180003947}
+  - component: {fileID: 180003950}
+  - component: {fileID: 180003949}
+  - component: {fileID: 180003948}
+  m_Layer: 5
+  m_Name: Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &180003947
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180003946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 798405132}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 785, y: -4}
+  m_SizeDelta: {x: 376.42, y: 274.7444}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &180003948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180003946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2231fec213ca46845ad8b9ed9a83a8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TweenTime: 1
+  Strength: 0.1
+--- !u!114 &180003949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180003946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69411767}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 802109a1812c114408c5b45472617087, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &180003950
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180003946}
+  m_CullTransparentMesh: 1
 --- !u!1 &192799530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2496,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 2092610614}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: SwitchUI
+      value: 
+      objectReference: {fileID: 180003946}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2624,7 +2710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2694,18 +2780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
---- !u!114 &257220723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257220721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &260136021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,18 +3282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
---- !u!114 &327233242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327233240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &332591106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,8 +4124,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1373512332}
   jammoLocation: {fileID: 989160788}
   PortalAnim: {fileID: 403500891}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &403500887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6400,10 +6462,10 @@ Transform:
   - {fileID: 1441680151}
   - {fileID: 634199540}
   - {fileID: 1219526024}
-  - {fileID: 7103658431670093572}
   - {fileID: 1932388952}
-  - {fileID: 863262286}
   - {fileID: 901884520}
+  - {fileID: 7103658431670093572}
+  - {fileID: 863262286}
   - {fileID: 327233238}
   - {fileID: 94783585}
   - {fileID: 1929995739}
@@ -7581,6 +7643,7 @@ RectTransform:
   - {fileID: 252908859}
   - {fileID: 1533642671}
   - {fileID: 1550987577}
+  - {fileID: 180003947}
   - {fileID: 1787037380}
   - {fileID: 1117363124}
   m_Father: {fileID: 1102304692}
@@ -8636,7 +8699,7 @@ Transform:
   m_Children:
   - {fileID: 502294768}
   m_Father: {fileID: 639674524}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &901884521
 BoxCollider:
@@ -9371,13 +9434,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 1028237817}
-  maxSeparationTime: 50
+  maxSeparationTime: 90
   continuedSeperationTime: 0
   g: {fileID: 98234736}
   m: {fileID: 1009400332}
   stopTimer: 0
   isTiming: 0
   EndPanel: {fileID: 2013060811}
+  GameUI: {fileID: 798405131}
 --- !u!114 &1028237817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9790,8 +9854,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 75309363}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 1116689145}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &1116689147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9886,7 +9950,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 798405132}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11326,8 +11390,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1853882083}
   jammoLocation: {fileID: 989160788}
   PortalAnim: {fileID: 1243245823}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &1243245820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12174,8 +12238,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 403500890}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 1373512337}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &1373512334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13776,6 +13840,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 35102460}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: SwitchUI
+      value: 
+      objectReference: {fileID: 180003946}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -14848,6 +14920,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 13464512}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: SwitchUI
+      value: 
+      objectReference: {fileID: 180003946}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -16372,7 +16452,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 798405132}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16970,8 +17050,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 11024454}
   jammoLocation: {fileID: 482143756}
   PortalAnim: {fileID: 1851209867}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &1851209869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17086,8 +17166,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1243245818}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 1853882088}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 180003946}
 --- !u!65 &1853882085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17456,7 +17536,7 @@ Transform:
   m_Children:
   - {fileID: 1222685996}
   m_Father: {fileID: 639674524}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!65 &1932388953
 BoxCollider:
@@ -19710,7 +19790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19785,18 +19865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
---- !u!114 &2510727409169822033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510727409169822031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da412f485ffaead4f86f734a3159ab2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7103658431670093572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}

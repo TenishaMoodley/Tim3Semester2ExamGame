@@ -14,6 +14,7 @@ public class Manager : MonoBehaviour
     public GameObject LShiftUI;
     public GameObject RShiftUI;
     public GameObject BarrelUI;
+    //public GameObject SwitchUI;
     public int TotalCollectables;
     public destroyObject DestoryObjectScript;
     public GameObject EndPanelOutOfTime;
@@ -61,11 +62,13 @@ public class Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             ArrowUI.SetActive(false);
+            //SwitchUI.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             WASDUI.SetActive(false);
+            BarrelUI.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -77,11 +80,6 @@ public class Manager : MonoBehaviour
         {
             RShiftUI.SetActive(false);
         }*/
-
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-        {
-            BarrelUI.SetActive(false);
-        }
 
     }
 

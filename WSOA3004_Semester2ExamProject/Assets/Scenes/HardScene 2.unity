@@ -466,8 +466,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1116689144}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 75309364}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 2084326780}
 --- !u!65 &75309366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6552,6 +6552,7 @@ RectTransform:
   - {fileID: 252908859}
   - {fileID: 1533642671}
   - {fileID: 1550987577}
+  - {fileID: 2084326781}
   - {fileID: 1168934058}
   - {fileID: 1117363124}
   m_Father: {fileID: 1102304692}
@@ -8804,8 +8805,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 75309363}
   jammoLocation: {fileID: 1888712617}
   PortalAnim: {fileID: 1116689145}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 2084326780}
 --- !u!65 &1116689147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8900,7 +8901,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 798405132}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9422,7 +9423,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 798405132}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10348,8 +10349,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1373512332}
   jammoLocation: {fileID: 1888712617}
   PortalAnim: {fileID: 1243245823}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 2084326780}
 --- !u!65 &1243245820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11438,8 +11439,8 @@ MonoBehaviour:
   linkedPortal: {fileID: 1243245818}
   jammoLocation: {fileID: 416316248}
   PortalAnim: {fileID: 1373512337}
-  JammoMovementScript: {fileID: 0}
-  generalScript: {fileID: 0}
+  JammoMovementScript: {fileID: 489258432}
+  SwitchUI: {fileID: 2084326780}
 --- !u!65 &1373512334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12399,9 +12400,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 35102460}
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: SwitchUI
+      value: 
+      objectReference: {fileID: 2084326780}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: switchCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -13473,9 +13482,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13464512}
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: SwitchUI
+      value: 
+      objectReference: {fileID: 2084326780}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: switchCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -15741,13 +15758,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 1905754698}
-  maxSeparationTime: 50
+  maxSeparationTime: 90
   continuedSeperationTime: 0
   g: {fileID: 98234736}
   m: {fileID: 1009400332}
   stopTimer: 0
   isTiming: 0
   EndPanel: {fileID: 1989521961}
+  GameUI: {fileID: 798405131}
 --- !u!114 &1905754698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17191,6 +17209,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1054886781960308489, guid: d3b2cc2ebde5fc445940dcc116d3076b, type: 3}
   m_PrefabInstance: {fileID: 2079692883}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2084326780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084326781}
+  - component: {fileID: 2084326784}
+  - component: {fileID: 2084326783}
+  - component: {fileID: 2084326782}
+  m_Layer: 5
+  m_Name: Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2084326781
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084326780}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 798405132}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 785, y: -4}
+  m_SizeDelta: {x: 376.42, y: 274.7444}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2084326782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084326780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2231fec213ca46845ad8b9ed9a83a8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TweenTime: 1
+  Strength: 0.1
+--- !u!114 &2084326783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084326780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69411767}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 802109a1812c114408c5b45472617087, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2084326784
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084326780}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2090727531
 PrefabInstance:
   m_ObjectHideFlags: 0
