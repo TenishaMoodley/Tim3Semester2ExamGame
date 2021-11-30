@@ -68,6 +68,7 @@ public class Player_Movement : MonoBehaviour
 
     void Start()
     {
+        Physics.gravity = new Vector3(0, -30, 0);
         currentScene = SceneManager.GetActiveScene();
         rBody = GetComponent<Rigidbody>();
         //Cursor.visible = false;
@@ -143,7 +144,7 @@ public class Player_Movement : MonoBehaviour
 
         if (Input.GetKey(Jump) && isGrounded2 == true) //(Input.GetKey((KeyCode)Jump)   
         {
-            rBody.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
+            rBody.AddForce(new Vector3(0, 13, 0), ForceMode.Impulse);
             isGrounded2 = false; // is false when jump button is pressed. 
         }
 
