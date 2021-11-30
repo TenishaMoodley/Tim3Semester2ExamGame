@@ -9,14 +9,25 @@ public class TimerCount : MonoBehaviour
     public float CollectableTime;
     //public TMP_Text Timer_Txt_End;
     public TMP_Text Timer_Txt_UI;
+    public TMP_Text highscoreText;
+    public TMP_Text currentScoreText;
+    public float highscoreCounter;
+    public float currentScore;
+
     private bool stopTimer;
 
     private void Start()
     {
         stopTimer = false;
+
+        if (PlayerPrefs.HasKey("Highscore"))
+        {
+            highscoreCounter = PlayerPrefs.GetFloat("Highscore");
+            
+        }
     }
 
-    private void Update()
+    public void Update()
     {
         float timeRN = CollectableTime - Time.timeSinceLevelLoad;
         int minutes = Mathf.FloorToInt(timeRN / 60);
@@ -35,5 +46,36 @@ public class TimerCount : MonoBehaviour
             
             Timer_Txt_UI.text = TextTime;
         }
+
+        currentScore = CollectableTime - timeRN;
+        
+
+        if (currentScore > highscoreCounter) //highscore
+        {
+            highscoreCounter = currentScore;
+            PlayerPrefs.SetFloat("Highscore", highscoreCounter);
+        }
+
+         if (highscoreCounter >= 60)
+         {
+             
+             highscoreText.text = Mathf.Round(highscoreCounter) + " mins";
+         }
+         else if(highscoreCounter < 60)
+         {
+            
+            highscoreText.text = Mathf.Round(highscoreCounter) + " s";
+         }
+
+         
+        if (currentScore >= 60)
+        {
+            currentScoreText.text = Mathf.Round(currentScore) + " mins";
+        }
+        else if (currentScore < 60)
+        {
+            currentScoreText.text = Mathf.Round(currentScore) + " s";
+        }
+
     }
 }

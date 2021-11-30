@@ -7,23 +7,26 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     public int score;
-    public TMP_Text Score_Txt_End;
+    //public TMP_Text Score_Txt_End;
     public TMP_Text Score_Txt_UI;
     public GameObject ArrowUI;
     public GameObject WASDUI;
     public GameObject LShiftUI;
     public GameObject RShiftUI;
     public GameObject BarrelUI;
+    //public GameObject SwitchUI;
     public int TotalCollectables;
     public destroyObject DestoryObjectScript;
-    public GameObject EndPanel;
+    public GameObject EndPanelOutOfTime;
+    public GameObject EndPanelAllCollected;
     public GameObject GameUI;
 
     private int Destroyed;
 
     private void Start()
     {
-        EndPanel.SetActive(false);
+        EndPanelOutOfTime.SetActive(false);
+        EndPanelAllCollected.SetActive(false);
         Time.timeScale = 1f;
         score = 0;
         Destroyed = 0;
@@ -47,27 +50,25 @@ public class Manager : MonoBehaviour
 
         if (score == TotalCollectables)
         {
-            DestroyedAdd();
-            EndPanel.SetActive(true);
-            GameUI.SetActive(false);
-            Time.timeScale = 0f;
-            Cursor.lockState = CursorLockMode.None;
+            StartCoroutine(CollectedAll());
         }
 
         StartCoroutine(Destroyself());
 
         Score_Txt_UI.text = "" + score;
-        Score_Txt_End.text = "Score: " + score;
+        //Score_Txt_End.text = "Score: " + score;
 
         //The game controls UI disappearing after interacted with
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             ArrowUI.SetActive(false);
+            //SwitchUI.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             WASDUI.SetActive(false);
+            BarrelUI.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -79,11 +80,6 @@ public class Manager : MonoBehaviour
         {
             RShiftUI.SetActive(false);
         }*/
-
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-        {
-            BarrelUI.SetActive(false);
-        }
 
     }
 
@@ -99,13 +95,25 @@ public class Manager : MonoBehaviour
 
         if ((score + Destroyed) == TotalCollectables || Destroyed == TotalCollectables)
         {
-            EndPanel.SetActive(true);
+            EndPanelOutOfTime.SetActive(true);
             GameUI.SetActive(false);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
         }
 
         Debug.Log("Coroutine works");
+    }
+
+    IEnumerator CollectedAll()
+    {
+        yield return new WaitForSeconds(1f);
+
+        DestroyedAdd();
+        EndPanelAllCollected.SetActive(true);
+        GameUI.SetActive(false);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+
     }
 
 }
