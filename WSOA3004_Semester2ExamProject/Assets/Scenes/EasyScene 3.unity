@@ -3634,7 +3634,6 @@ MonoBehaviour:
   PortalAnim: {fileID: 403500891}
   JammoMovementScript: {fileID: 489258432}
   SwitchUI: {fileID: 1255898288}
-  generalScript: {fileID: 98234736}
 --- !u!65 &403500887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9472,7 +9471,6 @@ MonoBehaviour:
   PortalAnim: {fileID: 1373512337}
   JammoMovementScript: {fileID: 489258432}
   SwitchUI: {fileID: 1255898288}
-  generalScript: {fileID: 98234736}
 --- !u!65 &1373512334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15584,6 +15582,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2510727410113771036, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 2510727410113771039, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: anim
       value: 
@@ -15626,7 +15628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7
+      value: 6.18
       objectReference: {fileID: 0}
     - target: {fileID: 4630446926377055817, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
       propertyPath: m_LocalPosition.y

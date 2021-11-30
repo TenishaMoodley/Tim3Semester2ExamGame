@@ -146,7 +146,9 @@ public class Player_Movement : MonoBehaviour
         {
             rBody.AddForce(new Vector3(0, 13, 0), ForceMode.Impulse);
             isGrounded2 = false; // is false when jump button is pressed. 
+            anim.SetBool("isJumping", true);
         }
+       
 
 
 
@@ -274,6 +276,7 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             isGrounded2 = true;
+            anim.SetBool("isJumping", false);
 
         }
     }
