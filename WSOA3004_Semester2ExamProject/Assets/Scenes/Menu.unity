@@ -2141,8 +2141,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 51.05
-  m_fontSizeBase: 51.05
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2215,16 +2215,18 @@ MonoBehaviour:
   - 
   - 
   - 
-  - You're always so ethustiastic Jammo
-  - Especially for someone who always gets caught in cages :P
+  - You're always so ethusiastic Jammo
+  - for someone who always gets caught in cages
   - 
   - 
-  - I know I know, I was just kidding :)
-  - Besides without my portals we wouldn't be able to travel as fast either or enter
-    certain places!
   - 
   - 
-  - I'm Ready When You are my Friend :)
+  - I know I know, I was just kidding :P
+  - Besides, without my portals
+  - we wouldn't be able to travel as well
+  - 
+  - 
+  - I'm Ready When You are Partner :)
   textSpeed: 0.1
 --- !u!1 &1381156884
 GameObject:
@@ -2966,8 +2968,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 58
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3042,8 +3044,13 @@ MonoBehaviour:
   - And beat our own highest scores!
   - 
   - 
-  - Hey! I only get caught so that I can help you!
+  - 
+  - Hey!
+  - I only get caught so I can help you!
   - Your lack of athletisism always slows us down!
+  - 
+  - 
+  - 
   - 
   - 
   - True That!
