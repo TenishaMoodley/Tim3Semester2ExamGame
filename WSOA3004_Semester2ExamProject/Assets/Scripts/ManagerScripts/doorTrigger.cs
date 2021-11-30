@@ -9,10 +9,13 @@ public class doorTrigger : MonoBehaviour
     GameObject pressurePoint1;
     GameObject pressurePoint2;
     public int switchCount;
-   
+    //public Rigidbody Jammo;
+    public Player_Movement JammoMovementScript;
+
     private void Start()
     {
         switchCount = 0;
+
     }
 
 
@@ -38,12 +41,15 @@ public class doorTrigger : MonoBehaviour
         {
             //switchCount++; 
            door.transform.position += new Vector3(0f, 2.4f, 0f);
+            JammoMovementScript.enabled = true;
         }
 
         if (col.gameObject.tag == "Adam")
         {
             //switchCount++; 
             door.transform.position += new Vector3(0f, 2.4f, 0f);
+            //Jammo.constraints = RigidbodyConstraints.FreezePosition;
+            JammoMovementScript.enabled = true;
         }
 
 
@@ -62,6 +68,8 @@ public class doorTrigger : MonoBehaviour
         {
             //switchCount++; 
             door.transform.position -= new Vector3(0f, 2.4f, 0f);
+            //Jammo.constraints = RigidbodyConstraints.None;
+            
         }
 
 

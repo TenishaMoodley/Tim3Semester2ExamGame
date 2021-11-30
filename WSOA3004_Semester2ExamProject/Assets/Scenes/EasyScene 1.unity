@@ -2347,6 +2347,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 1373512332}
   jammoLocation: {fileID: 1446294504}
   PortalAnim: {fileID: 403500891}
+  JammoMovementScript: {fileID: 489258432}
   generalScript: {fileID: 98234736}
 --- !u!65 &403500887
 BoxCollider:
@@ -2419,7 +2420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403500885}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1819, y: 0.30999947, z: -14.5}
+  m_LocalPosition: {x: 1.1819, y: 0.30999947, z: -14.9}
   m_LocalScale: {x: 2, y: 2, z: 0.1299}
   m_Children:
   - {fileID: 2145133856}
@@ -6412,7 +6413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373512331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.9, y: 0.3099995, z: -12.09}
+  m_LocalPosition: {x: 8.9, y: 0.3099995, z: -12.489998}
   m_LocalScale: {x: 2, y: 2, z: 0.1299}
   m_Children:
   - {fileID: 170303798}
@@ -6434,6 +6435,7 @@ MonoBehaviour:
   linkedPortal: {fileID: 403500890}
   jammoLocation: {fileID: 1446294504}
   PortalAnim: {fileID: 1373512337}
+  JammoMovementScript: {fileID: 489258432}
   generalScript: {fileID: 98234736}
 --- !u!65 &1373512334
 BoxCollider:
@@ -10286,6 +10288,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1794173029}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: Jammo
+      value: 
+      objectReference: {fileID: 489258433}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: JammoMovementScript
+      value: 
+      objectReference: {fileID: 489258432}
     - target: {fileID: 8512547662098415147, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: m_RootOrder
       value: 6

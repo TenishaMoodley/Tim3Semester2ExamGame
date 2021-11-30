@@ -7,6 +7,7 @@ public class Portal : MonoBehaviour
     public Transform linkedPortal;
     public Transform jammoLocation; 
     public Animator PortalAnim;
+    public Player_Movement JammoMovementScript;
     
     public General generalScript;
 
@@ -32,7 +33,8 @@ public class Portal : MonoBehaviour
                 fountain.Teleporting = true;
                 fountain.transform.position = jammoLocation.position;
                 fountain.enteredPortal = gameObject;
-                
+                //Jammo.constraints = RigidbodyConstraints.FreezePosition;
+                JammoMovementScript.enabled = false;
             }
         }
     }

@@ -1729,8 +1729,9 @@ GameObject:
   - component: {fileID: 1293388844}
   - component: {fileID: 1293388846}
   - component: {fileID: 1293388845}
+  - component: {fileID: 1293388847}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DialogueBoxAdam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1852,6 +1853,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293388843}
   m_CullTransparentMesh: 1
+--- !u!114 &1293388847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293388843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e5800abf41c42429c93afc62f9d297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1293388845}
+  rules:
+  - 
+  - ',And I''m Adam.'
+  - Welcome to Connection Perfection
+  - 
+  - Of Course Jammo :)
+  - I have no doubt we can collect them all.
+  - 
+  - 
+  - 
+  - 
+  - You're always so ethustiastic Jammo
+  - Especially for someone who always gets caught in cages :P
+  - 
+  - 
+  - I know I know, I was just kidding :)
+  - Besides without my portals we wouldn't be able to travel as fast either or enter
+    certain places!
+  - 
+  - 
+  - I'm Ready When You are my Friend :)
+  textSpeed: 0.1
 --- !u!1 &1381156884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,8 +2508,9 @@ GameObject:
   - component: {fileID: 1976821692}
   - component: {fileID: 1976821694}
   - component: {fileID: 1976821693}
+  - component: {fileID: 1976821695}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DialogueBoxJammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2595,6 +2632,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976821691}
   m_CullTransparentMesh: 1
+--- !u!114 &1976821695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976821691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e5800abf41c42429c93afc62f9d297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1976821693}
+  rules:
+  - Hi! I'm Jammo
+  - 
+  - 
+  - Adam! You ready to Team up XD
+  - 
+  - 
+  - 
+  - 'Same Same! '
+  - 'Together we can best the levels '
+  - And beat our own highest scores!
+  - 
+  - 
+  - Hey! I only get caught so that I can help you!
+  - Your lack of athletisism always slows us down!
+  - 
+  - 
+  - True That!
+  - Anyways, onto the game!
+  textSpeed: 0.1
 --- !u!1 &2035932282
 GameObject:
   m_ObjectHideFlags: 0
