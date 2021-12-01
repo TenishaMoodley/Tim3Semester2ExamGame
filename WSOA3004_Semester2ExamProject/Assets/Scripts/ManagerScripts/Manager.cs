@@ -70,6 +70,7 @@ public class Manager : MonoBehaviour
             WASDUI.SetActive(false);
             BarrelUI.SetActive(false);
             BlockUI.SetActive(false);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -97,6 +98,10 @@ public class Manager : MonoBehaviour
         if ((score + Destroyed) == TotalCollectables || Destroyed == TotalCollectables)
         {
             EndPanelOutOfTime.SetActive(true);
+
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("Fail");
+
             GameUI.SetActive(false);
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
@@ -111,6 +116,10 @@ public class Manager : MonoBehaviour
 
         DestroyedAdd();
         EndPanelAllCollected.SetActive(true);
+
+        //Play Sound
+        FindObjectOfType<MusicManager>().Play("Win");
+
         GameUI.SetActive(false);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;

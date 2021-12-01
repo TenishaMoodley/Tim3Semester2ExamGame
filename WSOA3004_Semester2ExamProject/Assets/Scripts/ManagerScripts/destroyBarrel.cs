@@ -16,7 +16,10 @@ public class destroyBarrel : MonoBehaviour
             explosion.Play();
             Destroy(collision.gameObject, 0.5f); //destroy barrel
             Destroy(DestroyableWall, 0.5f); //destroy yourself (wall)
-            
+
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("WallBreak");
+
         }
     }
 }

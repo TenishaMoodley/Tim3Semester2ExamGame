@@ -28,6 +28,9 @@ public class Portal : MonoBehaviour
                 fountain.transform.position = linkedPortal.position;
                 fountain.enteredPortal = gameObject;
                 PortalAnim.SetBool("isEntered", true);
+
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("Portal");
             }
         }
 

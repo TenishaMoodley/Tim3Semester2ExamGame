@@ -99,7 +99,9 @@ public class Player_Movement : MonoBehaviour
             transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime, Space.World);
             anim.SetBool("isRunningF", true);
 
-           // blank.y = 1;
+            
+
+            // blank.y = 1;
         }
         if (!Input.GetKey(Forward)) 
         {
@@ -147,11 +149,11 @@ public class Player_Movement : MonoBehaviour
             rBody.AddForce(new Vector3(0, 13, 0), ForceMode.Impulse);
             isGrounded2 = false; // is false when jump button is pressed. 
             anim.SetBool("isJumping", true);
+
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("Jump");
         }
        
-
-
-
 
         var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
 

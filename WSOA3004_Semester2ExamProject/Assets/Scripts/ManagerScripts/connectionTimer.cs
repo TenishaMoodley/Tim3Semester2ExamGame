@@ -46,8 +46,13 @@ public class connectionTimer : MonoBehaviour
             continuedSeperationTime += Time.deltaTime;
             Debug.Log(continuedSeperationTime);
 
-            TimerSlider.value = maxSeparationTime - continuedSeperationTime;                                                                
+            TimerSlider.value = maxSeparationTime - continuedSeperationTime;
 
+            /*if (continuedSeperationTime >= 12)
+            {
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("Warning");
+            }*/
 
             if (continuedSeperationTime >= maxSeparationTime)
             {
@@ -77,6 +82,10 @@ public class connectionTimer : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         EndPanel.SetActive(true);
+
+        //Play Sound
+        FindObjectOfType<MusicManager>().Play("Fail");
+
         GameUI.SetActive(false);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;

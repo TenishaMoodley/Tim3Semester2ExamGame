@@ -743,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.99
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6717,7 +6717,7 @@ MonoBehaviour:
   RShiftUI: {fileID: 1394845841}
   BarrelUI: {fileID: 1533642670}
   BlockUI: {fileID: 1245666687}
-  TotalCollectables: 8
+  TotalCollectables: 1
   DestoryObjectScript: {fileID: 5177972992567908771, guid: 6cd9d1980736bf8429573afc7a9bc168, type: 3}
   EndPanelOutOfTime: {fileID: 1954140344}
   EndPanelAllCollected: {fileID: 1046329476}

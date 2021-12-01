@@ -39,7 +39,7 @@ public class General : MonoBehaviour
             }
 
             //Play Sound
-            FindObjectOfType<MusicManager>().Play("Connected");
+            //FindObjectOfType<MusicManager>().Play("Connected");
 
         }
         else

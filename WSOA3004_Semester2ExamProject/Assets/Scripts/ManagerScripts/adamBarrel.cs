@@ -12,7 +12,13 @@ public class adamBarrel : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody>().mass = 5f;
             //this.gameObject.GetComponentInParent<Collider>().enabled = false;  
         }
-        
+
+        if (collision.gameObject.tag == "Jammo")
+        {
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("BarrelDragging");
+        }
+
     }
 
     private void OnCollisionExit(Collision collision)
