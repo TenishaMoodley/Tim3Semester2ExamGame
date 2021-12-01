@@ -606,9 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerSlider: {fileID: 2980907519038202323}
   TimerText: {fileID: 4952147434188784557}
-  CollectableTime: 60
-  Timer_Txt_End: {fileID: 0}
-  Timer_Txt_UI: {fileID: 0}
+  CollectableTime: 80
 --- !u!114 &824857409728458711
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class DialogueScript : MonoBehaviour
                 NextLine();
 
                 //Play Sound
-                FindObjectOfType<MusicManager>().Play("Talking2");
+                //FindObjectOfType<MusicManager>().Play("Talking1");
             }
             else
             {

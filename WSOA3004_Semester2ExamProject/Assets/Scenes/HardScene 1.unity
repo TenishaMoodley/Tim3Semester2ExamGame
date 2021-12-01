@@ -468,7 +468,7 @@ RectTransform:
   - {fileID: 518418149}
   - {fileID: 1228243038}
   m_Father: {fileID: 1655326940}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1959,6 +1959,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &197173319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197173320}
+  - component: {fileID: 197173322}
+  - component: {fileID: 197173321}
+  m_Layer: 5
+  m_Name: Adam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &197173320
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197173319}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935790542}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 555, y: -47}
+  m_SizeDelta: {x: 769.5535, y: 593.22}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &197173321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197173319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.538697, g: 0.6465163, b: 0.9150943, a: 0.92941177}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9f2ad1885fd0e3549b02b39ed5c454df, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &197173322
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197173319}
+  m_CullTransparentMesh: 1
 --- !u!1 &206796560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2100,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223689488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223689489}
+  - component: {fileID: 223689491}
+  - component: {fileID: 223689490}
+  m_Layer: 5
+  m_Name: Jammo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &223689489
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223689488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935790542}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -526, y: 139}
+  m_SizeDelta: {x: 785.031, y: 559.34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &223689490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223689488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.538697, g: 0.6465163, b: 0.9150943, a: 0.92941177}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 19b9ca8edf7c0f345886d8f3cd5e78f6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &223689491
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223689488}
+  m_CullTransparentMesh: 1
 --- !u!1001 &238011137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4342,7 +4492,6 @@ GameObject:
   - component: {fileID: 465254704}
   - component: {fileID: 465254707}
   - component: {fileID: 465254706}
-  - component: {fileID: 465254705}
   m_Layer: 5
   m_Name: Adam
   m_TagString: Untagged
@@ -4369,25 +4518,6 @@ RectTransform:
   m_AnchoredPosition: {x: 555, y: -47}
   m_SizeDelta: {x: 769.5535, y: 593.22}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &465254705
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465254703}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 340dd403e5e49df47832127ccfc25a39, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &465254706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4408,7 +4538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9f2ad1885fd0e3549b02b39ed5c454df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3170e59cb682274ba4a89d4390bee50, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4939,7 +5069,6 @@ GameObject:
   - component: {fileID: 518418149}
   - component: {fileID: 518418152}
   - component: {fileID: 518418151}
-  - component: {fileID: 518418150}
   m_Layer: 5
   m_Name: Jammo
   m_TagString: Untagged
@@ -4966,25 +5095,6 @@ RectTransform:
   m_AnchoredPosition: {x: -526, y: 139}
   m_SizeDelta: {x: 785.031, y: 559.34}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &518418150
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518418148}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e14a95e2cba56384babab04d4a29ab63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &518418151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,7 +5115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70db8e2313a51f74ea010ab0f091b1ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7da7b2e52d5d305428785a3c527aaaa2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7234,14 +7344,14 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: Fail
     clip: {fileID: 8300000, guid: 1585300ccfc603246b43fa8d944bedac, type: 3}
-    volume: 1
+    volume: 0.239
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
   - Name: Win
     clip: {fileID: 8300000, guid: cf440941aa5b36c4d80c206853a53922, type: 3}
-    volume: 1
+    volume: 0.384
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -7610,7 +7720,6 @@ GameObject:
   - component: {fileID: 780529203}
   - component: {fileID: 780529206}
   - component: {fileID: 780529205}
-  - component: {fileID: 780529204}
   m_Layer: 5
   m_Name: Adam
   m_TagString: Untagged
@@ -7637,25 +7746,6 @@ RectTransform:
   m_AnchoredPosition: {x: 555, y: -47}
   m_SizeDelta: {x: 769.5535, y: 593.22}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &780529204
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780529202}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 340dd403e5e49df47832127ccfc25a39, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &780529205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7676,7 +7766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9f2ad1885fd0e3549b02b39ed5c454df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3170e59cb682274ba4a89d4390bee50, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8575,7 +8665,7 @@ RectTransform:
   - {fileID: 1102137865}
   - {fileID: 465254704}
   m_Father: {fileID: 1655326940}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9567,7 +9657,6 @@ GameObject:
   - component: {fileID: 1102137865}
   - component: {fileID: 1102137868}
   - component: {fileID: 1102137867}
-  - component: {fileID: 1102137866}
   m_Layer: 5
   m_Name: Jammo
   m_TagString: Untagged
@@ -9594,25 +9683,6 @@ RectTransform:
   m_AnchoredPosition: {x: -526, y: 139}
   m_SizeDelta: {x: 785.031, y: 559.34}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1102137866
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102137864}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e14a95e2cba56384babab04d4a29ab63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1102137867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9633,7 +9703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70db8e2313a51f74ea010ab0f091b1ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a112fc850b38694da902f3613f0eda6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11023,7 +11093,6 @@ GameObject:
   - component: {fileID: 1228243038}
   - component: {fileID: 1228243041}
   - component: {fileID: 1228243040}
-  - component: {fileID: 1228243039}
   m_Layer: 5
   m_Name: Adam
   m_TagString: Untagged
@@ -11050,25 +11119,6 @@ RectTransform:
   m_AnchoredPosition: {x: 555, y: -47}
   m_SizeDelta: {x: 769.5535, y: 593.22}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1228243039
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228243037}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 340dd403e5e49df47832127ccfc25a39, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1228243040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11089,7 +11139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9f2ad1885fd0e3549b02b39ed5c454df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c80a27a10ff4fa04b88ee1898f8f5fc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15418,8 +15468,8 @@ RectTransform:
   m_Children:
   - {fileID: 1935790542}
   - {fileID: 408733940}
-  - {fileID: 55660485}
   - {fileID: 884789313}
+  - {fileID: 55660485}
   - {fileID: 1102304692}
   - {fileID: 2088740169}
   - {fileID: 1425916930}
@@ -16893,7 +16943,6 @@ GameObject:
   - component: {fileID: 1765108172}
   - component: {fileID: 1765108175}
   - component: {fileID: 1765108174}
-  - component: {fileID: 1765108173}
   m_Layer: 5
   m_Name: Jammo
   m_TagString: Untagged
@@ -16920,25 +16969,6 @@ RectTransform:
   m_AnchoredPosition: {x: -526, y: 139}
   m_SizeDelta: {x: 785.031, y: 559.34}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1765108173
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765108171}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e14a95e2cba56384babab04d4a29ab63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1765108174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16959,7 +16989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70db8e2313a51f74ea010ab0f091b1ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2f97da7354567d4297b0614bdfca7e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17832,14 +17862,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8162334, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.8162334, g: 1, b: 0, a: 0.76862746}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52f89a41c5c9f1b4280ba2133f0bf7b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 838d6ca42511ff0419cb028bf32eec8e, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18539,6 +18569,8 @@ RectTransform:
   - {fileID: 1904849607}
   - {fileID: 759426577}
   - {fileID: 1149989489}
+  - {fileID: 223689489}
+  - {fileID: 197173320}
   m_Father: {fileID: 1655326940}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
