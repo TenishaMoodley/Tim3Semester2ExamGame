@@ -15,6 +15,7 @@ TagManager:
   - pickUP
   - box
   - block
+  - music
   layers:
   - Default
   - TransparentFX

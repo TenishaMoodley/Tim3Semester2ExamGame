@@ -9510,7 +9510,7 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ButtonOrPopup1
     clip: {fileID: 8300000, guid: aabdf094fbe762243b206dc769aaee1a, type: 3}
-    volume: 1
+    volume: 0.171
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -15093,7 +15093,7 @@ GameObject:
   - component: {fileID: 1983252012}
   m_Layer: 0
   m_Name: Theme
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15122,9 +15122,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 36f875bcb81206d46b3ea6bf499ec24a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.046
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -314,9 +314,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 551472b5a8a0c3847b791bc1f08ffa76, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.037
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1234,10 +1234,10 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ButtonOrPopup1
     clip: {fileID: 8300000, guid: aabdf094fbe762243b206dc769aaee1a, type: 3}
-    volume: 1
+    volume: 0.171
     pitch: 1
     Loop: 0
-    PlayOnAwake: 1
+    PlayOnAwake: 0
     AudioSource: {fileID: 0}
   - Name: ButtonOrPopup2
     clip: {fileID: 8300000, guid: 7394c90772cd3454c80dc96156a0bf0d, type: 3}
@@ -2079,7 +2079,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427949914}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
@@ -2101,7 +2101,7 @@ Animator:
   m_GameObject: {fileID: 1427949914}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 21b7840034a0c794d894912ef97f12c3, type: 2}
+  m_Controller: {fileID: 9100000, guid: e227ff842a1dcf847be573ed6f511cfe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2822,7 +2822,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088467918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

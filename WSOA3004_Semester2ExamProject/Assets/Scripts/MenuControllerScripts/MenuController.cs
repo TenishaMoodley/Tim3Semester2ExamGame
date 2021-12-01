@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
      private void Start()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
     }
 
     public void ExitGame()
@@ -26,6 +27,7 @@ public class MenuController : MonoBehaviour
 
         //Play Sound
         FindObjectOfType<MusicManager>().Play("ButtonOrPopup1");
+        AudioListener.pause = false;
 
     }
 
@@ -35,6 +37,7 @@ public class MenuController : MonoBehaviour
 
         //Play Sound
         FindObjectOfType<MusicManager>().Play("ButtonOrPopup1");
+        AudioListener.pause = false;
     }
 
     public void NextNormalScene()
@@ -43,6 +46,7 @@ public class MenuController : MonoBehaviour
 
         //Play Sound
         FindObjectOfType<MusicManager>().Play("ButtonOrPopup1");
+        AudioListener.pause = false;
     }
 
     public void NextHardScene()
@@ -51,6 +55,17 @@ public class MenuController : MonoBehaviour
 
         //Play Sound
         FindObjectOfType<MusicManager>().Play("ButtonOrPopup1");
+        AudioListener.pause = false;
     }
+
+    /*public void SoundOff()
+    {
+        AudioListener.pause = true;
+    }
+
+    public void SoundOn()
+    {
+        AudioListener.pause = false;
+    }*/
 
 }
