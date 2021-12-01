@@ -2883,7 +2883,7 @@ MonoBehaviour:
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
   - Name: Talking3
-    clip: {fileID: 8300000, guid: 62d6daaa50c71104a9beb9364bc4c152, type: 3}
+    clip: {fileID: 8300000, guid: 9ef440b00e3236f4f8c3749869490a94, type: 3}
     volume: 1
     pitch: 1
     Loop: 0

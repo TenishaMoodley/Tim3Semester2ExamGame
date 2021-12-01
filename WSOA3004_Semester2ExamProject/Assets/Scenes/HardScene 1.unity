@@ -3455,8 +3455,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336544656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.29, y: 25.2351, z: -37.6827}
-  m_LocalScale: {x: 0.5, y: 6.4323473, z: 55.98251}
+  m_LocalPosition: {x: -25.29, y: 30.5499, z: -37.6827}
+  m_LocalScale: {x: 0.5, y: 15.263317, z: 55.98251}
   m_Children: []
   m_Father: {fileID: 866396697}
   m_RootOrder: 0
@@ -7178,8 +7178,8 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ThankYou
     clip: {fileID: 8300000, guid: 9be27a580dc7e6e4c8897c10fa00f4fe, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.384
+    pitch: 0.85
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -7192,15 +7192,15 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ButtonOrPopup2
     clip: {fileID: 8300000, guid: 7394c90772cd3454c80dc96156a0bf0d, type: 3}
-    volume: 1
+    volume: 0.293
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
   - Name: Collected
     clip: {fileID: 8300000, guid: 15eaf7ea3a9d42d4a9b500b2e2817766, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.736
+    pitch: 0.95
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -7213,7 +7213,7 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: BarrelDragging
     clip: {fileID: 8300000, guid: 395d0588b477b9c4bb6ac819367b1f2c, type: 3}
-    volume: 1
+    volume: 0.357
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -7248,7 +7248,7 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: Portal
     clip: {fileID: 8300000, guid: 7a56e6fbf84981a4b82deec50815c382, type: 3}
-    volume: 1
+    volume: 0.528
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -7256,7 +7256,7 @@ MonoBehaviour:
   - Name: WallBreak
     clip: {fileID: 8300000, guid: fa35a8094d48e42428ffd276f14c2c45, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 0.51
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -8929,8 +8929,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984650432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.2, y: 25.2351, z: -36.0778}
-  m_LocalScale: {x: 0.5, y: 6.4323473, z: 53.466522}
+  m_LocalPosition: {x: 20.2, y: 30.5499, z: -36.0778}
+  m_LocalScale: {x: 0.5, y: 15.263317, z: 53.466522}
   m_Children: []
   m_Father: {fileID: 866396697}
   m_RootOrder: 4
@@ -11998,7 +11998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1054886781960308489, guid: d3b2cc2ebde5fc445940dcc116d3076b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.4658623
+      value: 16.765127
       objectReference: {fileID: 0}
     - target: {fileID: 1054886781960308489, guid: d3b2cc2ebde5fc445940dcc116d3076b, type: 3}
       propertyPath: m_LocalScale.z
@@ -12010,7 +12010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1054886781960308489, guid: d3b2cc2ebde5fc445940dcc116d3076b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0302
+      value: 2.1195
       objectReference: {fileID: 0}
     - target: {fileID: 1054886781960308489, guid: d3b2cc2ebde5fc445940dcc116d3076b, type: 3}
       propertyPath: m_LocalPosition.z

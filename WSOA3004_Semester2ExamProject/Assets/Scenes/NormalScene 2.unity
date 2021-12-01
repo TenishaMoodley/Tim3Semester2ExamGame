@@ -2498,8 +2498,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336544656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.3654, y: 25.2351, z: -38.4847}
-  m_LocalScale: {x: 0.36915, y: 6.4323473, z: 48.9109}
+  m_LocalPosition: {x: -18.3654, y: 31.4416, z: -38.4847}
+  m_LocalScale: {x: 0.36915, y: 17.334179, z: 48.9109}
   m_Children: []
   m_Father: {fileID: 866396697}
   m_RootOrder: 2
@@ -5699,8 +5699,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901022369}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.3213, y: 23.518856, z: -13.9}
-  m_LocalScale: {x: 0.5, y: 9.8, z: 45.756477}
+  m_LocalPosition: {x: 4.3213, y: 29.3282, z: -13.9}
+  m_LocalScale: {x: 0.5, y: 21.41888, z: 45.756477}
   m_Children: []
   m_Father: {fileID: 866396697}
   m_RootOrder: 4
@@ -14148,8 +14148,8 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ThankYou
     clip: {fileID: 8300000, guid: 9be27a580dc7e6e4c8897c10fa00f4fe, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.384
+    pitch: 0.85
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -14162,15 +14162,15 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: ButtonOrPopup2
     clip: {fileID: 8300000, guid: 7394c90772cd3454c80dc96156a0bf0d, type: 3}
-    volume: 1
+    volume: 0.293
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
   - Name: Collected
     clip: {fileID: 8300000, guid: 15eaf7ea3a9d42d4a9b500b2e2817766, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.736
+    pitch: 0.95
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -14183,7 +14183,7 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: BarrelDragging
     clip: {fileID: 8300000, guid: 395d0588b477b9c4bb6ac819367b1f2c, type: 3}
-    volume: 1
+    volume: 0.357
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -14218,7 +14218,7 @@ MonoBehaviour:
     AudioSource: {fileID: 0}
   - Name: Portal
     clip: {fileID: 8300000, guid: 7a56e6fbf84981a4b82deec50815c382, type: 3}
-    volume: 1
+    volume: 0.528
     pitch: 1
     Loop: 0
     PlayOnAwake: 0
@@ -14226,7 +14226,7 @@ MonoBehaviour:
   - Name: WallBreak
     clip: {fileID: 8300000, guid: fa35a8094d48e42428ffd276f14c2c45, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 0.51
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -16681,8 +16681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699695519169090792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.164223, y: 25.2014, z: -38.4138}
-  m_LocalScale: {x: 0.5, y: 6.3648686, z: 49.14822}
+  m_LocalPosition: {x: 27.164223, y: 31.0176, z: -38.4138}
+  m_LocalScale: {x: 0.5, y: 17.886837, z: 49.14822}
   m_Children: []
   m_Father: {fileID: 866396697}
   m_RootOrder: 1
