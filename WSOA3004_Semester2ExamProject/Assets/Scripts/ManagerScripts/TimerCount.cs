@@ -4,26 +4,44 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class TimerCount : MonoBehaviour
 {
     public float CollectableTime;
     public TMP_Text Timer_Txt_UI;
-    //public TMP_Text highscoreText;
+    public TMP_Text highscoreText;
     public TMP_Text currentScoreText;
-    //public float highscoreCounter;
+    public float highscoreCounter = float.MaxValue;
     public float currentScore;
+
+    public string HIGHSCORE_KEY = "Easy_HighScore";
 
     private bool stopTimer;
 
+#if UNITY_EDITOR
+    [MenuItem("PlayerPrefs Util/Delete ALL PLAYER PREFS KEYS")]
+    public static void DeleteHighScore()
+    {
+        //PlayerPrefs.DeleteKey(HIGHSCORE_KEY);
+        PlayerPrefs.DeleteAll();
+    }
+
+#endif
     private void Start()
     {
         stopTimer = false;
-
-        /*if (PlayerPrefs.HasKey("Highscore"))
+        highscoreCounter = float.MaxValue;
+        if (PlayerPrefs.HasKey(HIGHSCORE_KEY))
         {
-            highscoreCounter = PlayerPrefs.GetFloat("Highscore");
-            
-        }*/
+            highscoreCounter = PlayerPrefs.GetFloat(HIGHSCORE_KEY);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(HIGHSCORE_KEY, highscoreCounter);
+        }
     }
 
     public void Update()
@@ -37,25 +55,29 @@ public class TimerCount : MonoBehaviour
         if (timeRN <= 0)
         {
             stopTimer = true;
-            
+
         }
         if (stopTimer == false)
         {
-            
+
             Timer_Txt_UI.text = TextTime;
         }
 
         //highscore
         currentScore = CollectableTime - timeRN;
-        
-        /*if (currentScore > highscoreCounter) 
-        {
-            highscoreCounter = currentScore;
-            PlayerPrefs.SetFloat("Highscore", highscoreCounter);
-        }
+       //UpdateHighScore();
 
-        highscoreText.text = Mathf.Round(highscoreCounter) + " s";*/
+        highscoreText.text = Mathf.Round(highscoreCounter) + " s";
         currentScoreText.text = Mathf.Round(currentScore) + " s";
 
+    }
+
+    public void UpdateHighScore()
+    {
+        if (currentScore < highscoreCounter)
+        {
+            highscoreCounter = currentScore;
+            PlayerPrefs.SetFloat(HIGHSCORE_KEY, highscoreCounter);
+        }
     }
 }

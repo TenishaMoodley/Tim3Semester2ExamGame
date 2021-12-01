@@ -743,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.76
+      value: -10.4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2697,7 +2697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &344996235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2714,7 +2714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 214}
+  m_AnchoredPosition: {x: -14, y: 205}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344996236
@@ -5756,7 +5756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &793115193
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5773,7 +5773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 129}
+  m_AnchoredPosition: {x: -14, y: 120}
   m_SizeDelta: {x: -1417.084, y: -1016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793115194
@@ -6717,11 +6717,12 @@ MonoBehaviour:
   RShiftUI: {fileID: 1394845841}
   BarrelUI: {fileID: 1533642670}
   BlockUI: {fileID: 1245666687}
-  TotalCollectables: 1
+  TotalCollectables: 8
   DestoryObjectScript: {fileID: 5177972992567908771, guid: 6cd9d1980736bf8429573afc7a9bc168, type: 3}
   EndPanelOutOfTime: {fileID: 1954140344}
   EndPanelAllCollected: {fileID: 1046329476}
   GameUI: {fileID: 798405131}
+  timerCount: {fileID: 1660879013}
 --- !u!4 &1009400333
 Transform:
   m_ObjectHideFlags: 0
@@ -7102,7 +7103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 317}
+  m_AnchoredPosition: {x: -23, y: 369}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090325563
@@ -8921,7 +8922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: 205}
+  m_AnchoredPosition: {x: -16.0625, y: 292}
   m_SizeDelta: {x: -1401.188, y: -981.7673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1256231647
@@ -8971,8 +8972,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 155.17
-  m_fontSizeBase: 155.17
+  m_fontSize: 104.24
+  m_fontSizeBase: 104.24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11549,8 +11550,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollectableTime: 80
   Timer_Txt_UI: {fileID: 1660879010}
+  highscoreText: {fileID: 793115194}
   currentScoreText: {fileID: 1256231647}
+  highscoreCounter: 3.4028235e+38
   currentScore: 0
+  HIGHSCORE_KEY: Easy_HighScore
 --- !u!1 &1668165456
 GameObject:
   m_ObjectHideFlags: 0

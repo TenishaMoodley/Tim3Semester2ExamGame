@@ -63,7 +63,7 @@ public class Player_Movement : MonoBehaviour
     public KeyCode pickedUp;
     public Transform pickedUpDest;
 
-
+    private float angle;
 
 
     void Start()
@@ -153,13 +153,18 @@ public class Player_Movement : MonoBehaviour
             //Play Sound
             FindObjectOfType<MusicManager>().Play("Jump");
         }
-       
 
-        var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
+        var absXAxis = Mathf.Abs(input.x);
+        var absYAxis = Mathf.Abs(input.y);
 
-        var eulerRotation = transform.eulerAngles;
-        eulerRotation.y = angle + angleOffset;      //possible issue.
-        transform.eulerAngles = eulerRotation;
+        if ( absXAxis > 0 || absYAxis > 0)
+        {
+            angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
+            var eulerRotation = transform.eulerAngles;
+            eulerRotation.y = angle + angleOffset;      //possible issue.
+            transform.eulerAngles = eulerRotation;
+        }
+        
         
         
         ClampPosition();

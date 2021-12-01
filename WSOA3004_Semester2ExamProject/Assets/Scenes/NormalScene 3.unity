@@ -3991,7 +3991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 316}
+  m_AnchoredPosition: {x: -13.9375, y: 364}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583946957
@@ -5471,7 +5471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &826303904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5488,7 +5488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 214}
+  m_AnchoredPosition: {x: -13.9375, y: 204}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826303905
@@ -7269,7 +7269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: 216}
+  m_AnchoredPosition: {x: -7, y: 292}
   m_SizeDelta: {x: -1401.188, y: -981.7673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005163137
@@ -7319,8 +7319,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 157.2
-  m_fontSizeBase: 157.2
+  m_fontSize: 99.4
+  m_fontSizeBase: 99.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7412,6 +7412,7 @@ MonoBehaviour:
   EndPanelOutOfTime: {fileID: 898478998}
   EndPanelAllCollected: {fileID: 1458644275}
   GameUI: {fileID: 798405131}
+  timerCount: {fileID: 1856288114}
 --- !u!4 &1009400333
 Transform:
   m_ObjectHideFlags: 0
@@ -7456,7 +7457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1020734787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7473,7 +7474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 129}
+  m_AnchoredPosition: {x: -13.9375, y: 119}
   m_SizeDelta: {x: -1417.084, y: -1016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020734788
@@ -14004,8 +14005,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollectableTime: 75
   Timer_Txt_UI: {fileID: 1856288115}
+  highscoreText: {fileID: 1020734788}
   currentScoreText: {fileID: 1005163137}
+  highscoreCounter: 3.4028235e+38
   currentScore: 0
+  HIGHSCORE_KEY: Normal_HighScore
 --- !u!114 &1856288115
 MonoBehaviour:
   m_ObjectHideFlags: 0

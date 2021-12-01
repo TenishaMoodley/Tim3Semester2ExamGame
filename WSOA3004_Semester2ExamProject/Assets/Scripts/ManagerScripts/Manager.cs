@@ -21,6 +21,9 @@ public class Manager : MonoBehaviour
     public GameObject EndPanelAllCollected;
     public GameObject GameUI;
 
+    [SerializeField]
+    protected TimerCount timerCount;
+
     private int Destroyed;
 
     private void Start()
@@ -123,6 +126,7 @@ public class Manager : MonoBehaviour
         GameUI.SetActive(false);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
+        timerCount.UpdateHighScore();
 
     }
 

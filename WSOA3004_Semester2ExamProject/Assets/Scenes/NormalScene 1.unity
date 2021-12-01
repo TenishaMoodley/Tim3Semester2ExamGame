@@ -3865,8 +3865,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 156.1
-  m_fontSizeBase: 156.1
+  m_fontSize: 101.6
+  m_fontSizeBase: 101.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3931,7 +3931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: 203}
+  m_AnchoredPosition: {x: -7, y: 294}
   m_SizeDelta: {x: -1401.188, y: -981.7673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &486182733
@@ -4098,8 +4098,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollectableTime: 75
   Timer_Txt_UI: {fileID: 502582776}
+  highscoreText: {fileID: 585128805}
   currentScoreText: {fileID: 481129638}
+  highscoreCounter: 3.4028235e+38
   currentScore: 0
+  HIGHSCORE_KEY: Normal_HighScore
 --- !u!114 &502582776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4813,7 +4816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &585128803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4830,7 +4833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 129}
+  m_AnchoredPosition: {x: -13.9375, y: 124}
   m_SizeDelta: {x: -1417.084, y: -1016}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &585128804
@@ -7094,7 +7097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &985357195
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7111,7 +7114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 214}
+  m_AnchoredPosition: {x: -13.9375, y: 209}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &985357196
@@ -7505,6 +7508,7 @@ MonoBehaviour:
   EndPanelOutOfTime: {fileID: 759192400}
   EndPanelAllCollected: {fileID: 10745991}
   GameUI: {fileID: 798405131}
+  timerCount: {fileID: 502582775}
 --- !u!4 &1009400333
 Transform:
   m_ObjectHideFlags: 0
@@ -10367,7 +10371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.9375, y: 303}
+  m_AnchoredPosition: {x: -13.9375, y: 365}
   m_SizeDelta: {x: -1417.084, y: -1015.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398663649
