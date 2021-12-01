@@ -20,6 +20,8 @@ public class PortalUI : MonoBehaviour
         {
             PortalUi.SetActive(true);
 
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("ButtonOrPopup2");
         }
 
     }

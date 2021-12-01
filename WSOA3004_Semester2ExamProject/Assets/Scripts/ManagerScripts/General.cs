@@ -38,6 +38,9 @@ public class General : MonoBehaviour
 
             }
 
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("Connected");
+
         }
         else
         {

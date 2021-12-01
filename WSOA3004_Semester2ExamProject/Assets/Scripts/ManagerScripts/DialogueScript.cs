@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Random = UnityEngine.Random;
 
 public class DialogueScript : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class DialogueScript : MonoBehaviour
             if (textComponent.text == rules[index])
             {
                 NextLine();
+
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("Talking2");
             }
             else
             {

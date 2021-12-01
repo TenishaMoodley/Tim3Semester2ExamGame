@@ -13,6 +13,9 @@ public class Barrel : MonoBehaviour
 
             BarrelUI.SetActive(true);
 
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("ButtonOrPopup2");
+
         }
     }
 }

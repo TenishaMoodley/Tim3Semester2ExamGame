@@ -12,11 +12,12 @@ public class doorTrigger : MonoBehaviour
     //public Rigidbody Jammo;
     public Player_Movement JammoMovementScript;
     public GameObject SwitchUI;
+    public Portal p;
 
     private void Start()
     {
         switchCount = 0;
-
+        
     }
 
     private void OnTriggerEnter(Collider col)
@@ -27,6 +28,15 @@ public class doorTrigger : MonoBehaviour
            door.transform.position += new Vector3(0f, 2.4f, 0f);
             JammoMovementScript.enabled = true;
             SwitchUI.SetActive(false);
+
+            if (p.JammoInCage == true)
+            {
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("ThankYou");
+
+                p.JammoInCage = false;
+            }
+            
         }
 
         if (col.gameObject.tag == "Adam")
@@ -36,6 +46,14 @@ public class doorTrigger : MonoBehaviour
             //Jammo.constraints = RigidbodyConstraints.FreezePosition;
             JammoMovementScript.enabled = true;
             SwitchUI.SetActive(false);
+
+            if (p.JammoInCage == true)
+            {
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("ThankYou");
+
+                p.JammoInCage = false;
+            }
         }
 
 

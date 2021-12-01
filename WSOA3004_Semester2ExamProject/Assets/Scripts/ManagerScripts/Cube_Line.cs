@@ -36,6 +36,9 @@ public class Cube_Line : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Manager.GetComponent<Manager>().Addpoint();
+
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("Collected");
         }
     }
 }

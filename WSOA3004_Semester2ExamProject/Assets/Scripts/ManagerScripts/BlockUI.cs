@@ -12,6 +12,9 @@ public class BlockUI : MonoBehaviour
         if (other.gameObject.tag == "Jammo")
         {
             theBlockUI.SetActive(true);
+
+            //Play Sound
+            FindObjectOfType<MusicManager>().Play("ButtonOrPopup2");
         }
         
     }

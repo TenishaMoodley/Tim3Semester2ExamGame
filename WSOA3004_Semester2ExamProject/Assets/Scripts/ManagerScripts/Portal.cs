@@ -10,6 +10,12 @@ public class Portal : MonoBehaviour
     public Player_Movement JammoMovementScript;
     public GameObject SwitchUI;
     //public General generalScript;
+    public bool JammoInCage;
+
+    private void Start()
+    {
+        JammoInCage = false;
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -36,6 +42,10 @@ public class Portal : MonoBehaviour
                 //Jammo.constraints = RigidbodyConstraints.FreezePosition;
                 JammoMovementScript.enabled = false;
                 SwitchUI.SetActive(true);
+                JammoInCage = true;
+
+                //Play Sound
+                FindObjectOfType<MusicManager>().Play("ButtonOrPopup2");
             }
         }
     }
