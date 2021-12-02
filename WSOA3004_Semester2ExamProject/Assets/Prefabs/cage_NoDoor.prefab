@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 719750162773689491}
   - component: {fileID: 4448239387348004372}
   - component: {fileID: 5754678389089435573}
-  - component: {fileID: 4397682236273838795}
+  - component: {fileID: 3772803238954154865}
   m_Layer: 0
   m_Name: Cage Back
   m_TagString: Untagged
@@ -484,7 +484,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4397682236273838795
+--- !u!65 &3772803238954154865
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -495,8 +495,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5002034, y: 1, z: 2.3685117}
-  m_Center: {x: 0.03776014, y: 0, z: 0.33721456}
+  m_Size: {x: 1.3930993, y: 1, z: 1}
+  m_Center: {x: 0.016322851, y: 0, z: 0}
 --- !u!1 &7361757532489692272
 GameObject:
   m_ObjectHideFlags: 0
