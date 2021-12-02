@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 35fc0bb8c874eba48b22f60d878ffbe4, type: 2}
+    - target: {fileID: 3288425911779819068, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288425911779819068, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3433045773333619366, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
       propertyPath: m_Name
       value: Destroy03 Variant
@@ -82,6 +90,10 @@ PrefabInstance:
     - target: {fileID: 4454491670160561428, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514792846427010452, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.97
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4eb387c519485e4fb694a53e9384d11, type: 3}
