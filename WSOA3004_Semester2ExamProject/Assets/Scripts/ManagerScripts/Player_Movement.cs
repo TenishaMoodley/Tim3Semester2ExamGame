@@ -37,9 +37,9 @@ public class Player_Movement : MonoBehaviour
 
     public Vector3 Position_Change;
 
-    private float Easy_MaxX = 11;
-    private float Easy_MaxZ = 11;
-    private float Easy_MinX = -11;
+    private float Easy_MaxX = 11.7f;
+    private float Easy_MaxZ = 12;
+    private float Easy_MinX = -11.7f;
     private float Easy_MinZ = -12;
 
     private float Normal_MaxX = 23;

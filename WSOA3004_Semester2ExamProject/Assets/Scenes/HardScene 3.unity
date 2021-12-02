@@ -3461,7 +3461,15 @@ PrefabInstance:
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: p
       value: 
-      objectReference: {fileID: 1373512333}
+      objectReference: {fileID: 1243245819}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p2
+      value: 
+      objectReference: {fileID: 1853882084}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p3
+      value: 
+      objectReference: {fileID: 1853882084}
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: door
       value: 
@@ -18021,7 +18029,15 @@ PrefabInstance:
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: p
       value: 
-      objectReference: {fileID: 1373512333}
+      objectReference: {fileID: 1116689146}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p2
+      value: 
+      objectReference: {fileID: 75309365}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p3
+      value: 
+      objectReference: {fileID: 75309365}
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: door
       value: 
@@ -19326,7 +19342,15 @@ PrefabInstance:
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: p
       value: 
-      objectReference: {fileID: 1373512333}
+      objectReference: {fileID: 1851209868}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p2
+      value: 
+      objectReference: {fileID: 11024456}
+    - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
+      propertyPath: p3
+      value: 
+      objectReference: {fileID: 11024456}
     - target: {fileID: 8512547662098415143, guid: a7916186e73e3ed40a5b042677940dcd, type: 3}
       propertyPath: door
       value: 

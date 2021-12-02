@@ -12,7 +12,8 @@ public class doorTrigger : MonoBehaviour
     //public Rigidbody Jammo;
     public Player_Movement JammoMovementScript;
     public GameObject SwitchUI;
-    public Portal p;
+    public Portal p,p2,p3;
+
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class doorTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if ( col.gameObject.tag == "Barrel")
+       /* if ( col.gameObject.tag == "Barrel")
         {
             //switchCount++; 
            door.transform.position += new Vector3(0f, 2.4f, 0f);
@@ -37,7 +38,7 @@ public class doorTrigger : MonoBehaviour
                 p.JammoInCage = false;
             }
             
-        }
+        }*/
 
         if (col.gameObject.tag == "Adam")
         {
@@ -47,12 +48,14 @@ public class doorTrigger : MonoBehaviour
             JammoMovementScript.enabled = true;
             SwitchUI.SetActive(false);
 
-            if (p.JammoInCage == true)
+            if (p.JammoInCage == true || p2.JammoInCage == true|| p3.JammoInCage == true)
             {
                 //Play Sound
                 FindObjectOfType<MusicManager>().Play("ThankYou");
 
                 p.JammoInCage = false;
+                p2.JammoInCage = false;
+                p3.JammoInCage = false;
             }
         }
 
