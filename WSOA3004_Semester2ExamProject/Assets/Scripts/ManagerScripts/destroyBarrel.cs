@@ -11,6 +11,10 @@ public class destroyBarrel : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
         if (collision.gameObject.tag == "Barrel")
         {
             explosion.Play();
@@ -21,5 +25,6 @@ public class destroyBarrel : MonoBehaviour
             FindObjectOfType<MusicManager>().Play("WallBreak");
 
         }
+
     }
 }

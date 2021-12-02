@@ -2661,6 +2661,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
+--- !u!198 &257220723 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 257220720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &260136021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9178,7 +9183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 257220723}
   DestroyableWall: {fileID: 925066331}
 --- !u!1 &925736735
 GameObject:
@@ -12528,7 +12533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 1423617813}
   DestroyableWall: {fileID: 1298650266}
 --- !u!1 &1302015499
 GameObject:
@@ -13923,6 +13928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+--- !u!198 &1423617813 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 1423617812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1425025774
 GameObject:
   m_ObjectHideFlags: 0

@@ -904,6 +904,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
+--- !u!198 &94783589 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 94783584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &97769410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3292,6 +3297,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
+--- !u!198 &257220723 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 257220720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &260136021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +3986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarrelUI: {fileID: 1533642670}
+--- !u!198 &327233242 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 327233237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &332253930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9153,6 +9168,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4630446926377055814, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
   m_PrefabInstance: {fileID: 801235221}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &801235225 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2510727408612944759, guid: 4e379aa68f6aa8444a97a51d340e95fc, type: 3}
+  m_PrefabInstance: {fileID: 801235221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &801235226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10178,7 +10198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 257220723}
   DestroyableWall: {fileID: 925066331}
 --- !u!4 &936720427 stripped
 Transform:
@@ -19517,7 +19537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 257220723}
   DestroyableWall: {fileID: 1699097169}
 --- !u!1001 &1707880021
 PrefabInstance:
@@ -20203,7 +20223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 801235225}
   DestroyableWall: {fileID: 1775373308}
 --- !u!1 &1786480712
 GameObject:
@@ -20457,7 +20477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 94783589}
   DestroyableWall: {fileID: 1793224477}
 --- !u!1001 &1794066297
 PrefabInstance:
@@ -21930,7 +21950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801df8c008ad95d41a163cbbdcf0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 558979642}
+  explosion: {fileID: 327233242}
   DestroyableWall: {fileID: 1986887630}
 --- !u!1 &1986945348
 GameObject:
