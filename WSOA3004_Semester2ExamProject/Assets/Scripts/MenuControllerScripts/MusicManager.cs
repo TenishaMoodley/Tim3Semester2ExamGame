@@ -48,4 +48,17 @@ public class MusicManager : MonoBehaviour
             return;
         }
     }
+
+    public void Stop(string nanme) 
+    {
+        Sound SoundThatWeFind = Array.Find(sounds, sound => sound.Name == name);
+        SoundThatWeFind.AudioSource.Stop();
+
+        if (SoundThatWeFind == null)
+        {
+            Debug.LogWarning("Music reference " + name + " is not found");
+            return;
+        }
+
+    }
 }
