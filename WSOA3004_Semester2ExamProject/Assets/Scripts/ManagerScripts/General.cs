@@ -18,15 +18,8 @@ public class General : MonoBehaviour
 
     public float Max_Distance;
 
-    public bool isApart = false;
+    public bool isApart;
    // public bool runOnce;
-
-    private void Start()
-    {
-        //isApart = false;
-    }
-
-
 
     private void Update()
     {
@@ -34,8 +27,6 @@ public class General : MonoBehaviour
         float Distance = Vector3.Distance(Bean1_GO.transform.position, Bean2_GO.transform.position);
         if (Distance > Max_Distance)//far apart from each other    and longer than specific amount of seconds. 
         {
-          
-
             if (time < Time.time)
             {
                 Line_GO.SetActive(false);
@@ -43,26 +34,18 @@ public class General : MonoBehaviour
                 ctScript.TimerSlider.maxValue = ctScript.maxSeparationTime;
                 ctScript.TimerSlider.value = ctScript.maxSeparationTime;
                 ctScript.stopTimer = false;
-
-                //Play Audio 
-                isApart = true;
-                playSound();
-
             }
-            
         }
       
         else
         {
-            isApart = false;
             Line_GO.SetActive(true);
             ctScript.stopTimer = true;
-            stopSound();
-
+           
         }
     }
 
-    void playSound() 
+   /* void playSound() 
     {
         if (isApart ==true) 
         {
@@ -79,7 +62,7 @@ public class General : MonoBehaviour
             Line_GO.SetActive(true);
             FindObjectOfType<MusicManager>().Stop("Connected");
         }
-    }
+    }*/
 
   
 

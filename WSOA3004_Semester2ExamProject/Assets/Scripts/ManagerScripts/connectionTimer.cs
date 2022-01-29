@@ -72,6 +72,7 @@ public class connectionTimer : MonoBehaviour
         {
             timeAtDisconnection = Time.timeSinceLevelLoad;
             stopTimer = false;
+            FindObjectOfType<MusicManager>().Play("Connected");
         }
     }
 
